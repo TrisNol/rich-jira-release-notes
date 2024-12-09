@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = []
+description = ""
+license = "MIT"
+name = "rich-jira-release-notes"
+readme = "README.md"
+version = "0.0.0"
+
+[tool.poetry.dependencies]
+loguru = "^0.7.3"
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"

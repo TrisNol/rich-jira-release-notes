@@ -12,3 +12,7 @@ RUN apt-get update && apt-get -y install python3-launchpadlib python3-pip && apt
 RUN apt-get update && apt-get -y install python3.12 python3.12-dev python3.12-venv python-is-python3 && apt-get clean
 RUN export PATH="$HOME/.local/bin:$PATH"
 RUN pip install poetry
+
+# Install Node
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+RUN apt-get install -y nodejs && apt-get clean
