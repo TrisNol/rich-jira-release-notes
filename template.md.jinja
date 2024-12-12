@@ -1,6 +1,6 @@
 # Release Notes 0.0.0
 
 {% for issue in issues %}
-## {{ issue.key }}: {{ issue.Summary }}
-{{ issue.get("Release Notes") }}
+## {{ issue.key }}: {{ issue.fields.get("Summary").content }}
+{{ issue.fields.get("Release Notes").content }}
 {% endfor %}

@@ -9,3 +9,4 @@ JIRA_URL=
 JIRA_USER=
 JIRA_TOKEN=
 ```
+2. Create a [Jinja template](https://jinja.palletsprojects.com/en/stable/) in your project.
