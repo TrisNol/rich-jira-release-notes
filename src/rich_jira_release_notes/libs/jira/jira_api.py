@@ -148,7 +148,7 @@ if __name__ == "__main__":
     issues = api.get_issues(jql_query, fields)
 
     from bs4 import BeautifulSoup
-    import pyhtml2md
+    import markdownify
 
     output_dir = "./dist"
     os.makedirs("./dist/images", exist_ok=True)
@@ -161,7 +161,9 @@ if __name__ == "__main__":
                     path = f"{output_dir}/images/{image.get('alt')}"
                     api.download_attachment(image.get("src"), path)
                     image["src"] = "images/" + image.get("alt")
-                issue.fields[field_key].content = pyhtml2md.convert(soup.prettify())
+                issue.fields[field_key].content = markdownify.markdownify(
+                    soup.prettify(), heading_style="ATX"
+                )
 
     # TODO - When templating the is_rendered field does not matter, model data differently
     from jinja2 import Template
