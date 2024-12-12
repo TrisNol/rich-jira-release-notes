@@ -94,21 +94,21 @@ class JiraAPI:
             )
         return result
 
-    def download_attachment(self, id: str, output_dir: str) -> None:
+    def download_attachment(self, url: str, output_path: str) -> None:
         """Get attachment specified by id utilizing https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments#api-group-issue-attachments
 
         Args:
             id (str): ID of attachment
             output_dir (str): Output directory to save attachment to
         """
-        url = f"{self.base_url}/rest/api/3/attachment/{id}"
+        url = f"{self.base_url}{url}"
         auth = HTTPBasicAuth(self.credentials.username, self.credentials.token)
 
         headers = {"Accept": "application/json"}
 
         response = requests.request("GET", url, headers=headers, auth=auth)
 
-        with open(f"{output_dir}/{id}", "wb") as f:
+        with open(output_path, "wb") as f:
             f.write(response.content)
 
     def get_attachment_metadata(self, id: str) -> dict:
@@ -151,4 +151,27 @@ if __name__ == "__main__":
     jql_query = "project = DEV"
     fields = ["Summary", "Release Notes"]  # Key and ID will always be included
 
-    api.get_issues(jql_query, fields)
+    issues = api.get_issues(jql_query, fields)
+
+    from bs4 import BeautifulSoup
+    import pyhtml2md
+
+    output_dir = "./dist"
+    os.makedirs("./dist/images", exist_ok=True)
+    for issue in issues:
+        soup = BeautifulSoup(issue["Release Notes"], "html.parser")
+        images = soup.find_all("img")
+        for image in images:
+            path = f"{output_dir}/images/{image.get('alt')}"
+            api.download_attachment(image.get("src"), path)
+            image["src"] = "images/" + image.get("alt")
+        issue["Release Notes"] = pyhtml2md.convert(soup.prettify())
+    with open("issues.json", "w") as f:
+        f.write(json.dumps(issues, sort_keys=True, indent=4, separators=(",", ": ")))
+
+    from jinja2 import Template
+
+    with open("./template.md.jinja") as template_file:
+        template = Template(template_file.read())
+        with open("./dist/release_notes.md", "w") as f:
+            f.write(template.render(issues=issues))
