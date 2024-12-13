@@ -57,23 +57,6 @@ class JiraAPI:
         )
 
         data = json.loads(response.text)
-        print(
-            json.dumps(
-                json.loads(response.text),
-                sort_keys=True,
-                indent=4,
-                separators=(",", ": "),
-            )
-        )
-        with open("response.json", "w") as f:
-            f.write(
-                json.dumps(
-                    json.loads(response.text),
-                    sort_keys=True,
-                    indent=4,
-                    separators=(",", ": "),
-                )
-            )
 
         # Resolve Jira internal field names to clear text representation of desired fields
         field_maps = {}
@@ -123,52 +106,3 @@ class JiraAPI:
 
         with open(output_path, "wb") as f:
             f.write(response.content)
-
-
-if __name__ == "__main__":
-    import os
-    from dotenv import load_dotenv
-
-    load_dotenv(override=True)
-
-    base_url = os.getenv("JIRA_URL")
-    username = os.getenv("JIRA_USER")
-    token = os.getenv("JIRA_TOKEN")
-
-    if any(v is None for v in [base_url, username, token]):
-        raise RuntimeError("Missing environment variables")
-
-    api = JiraAPI(
-        str(base_url), JiraCredentialsModel(username=str(username), token=str(token))
-    )
-
-    jql_query = 'project = DEV and fixVersion = "0.0.0"'
-    fields = ["Summary", "Release Notes"]  # Key and ID will always be included
-
-    issues = api.get_issues(jql_query, fields)
-
-    from bs4 import BeautifulSoup
-    import markdownify
-
-    output_dir = "./dist"
-    os.makedirs("./dist/images", exist_ok=True)
-    for issue in issues:
-        for field_key, field_content in issue.fields.items():
-            if field_content.is_rendered:
-                soup = BeautifulSoup(field_content.content, "html.parser")
-                images = soup.find_all("img")
-                for image in images:
-                    path = f"{output_dir}/images/{image.get('alt')}"
-                    api.download_attachment(image.get("src"), path)
-                    image["src"] = "images/" + image.get("alt")
-                issue.fields[field_key].content = markdownify.markdownify(
-                    soup.prettify(), heading_style="ATX"
-                )
-
-    # TODO - When templating the is_rendered field does not matter, model data differently
-    from jinja2 import Template
-
-    with open("./template.md.jinja") as template_file:
-        template = Template(template_file.read())
-        with open("./dist/release_notes.md", "w") as f:
-            f.write(template.render(issues=issues))
