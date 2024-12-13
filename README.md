@@ -1,5 +1,8 @@
-# rich-jira-release-notes
-Generate rich Jira release notes📄🤖
+# rich-jira-release-notes 📄🤖
+
+As of today Jira is not able to export auto-generated release notes with assets such as images (see: [Atlassion Support - Create release notes](https://support.atlassian.com/jira-cloud-administration/docs/create-release-notes/#:~:text=Release%20notes%20can%20include%20rich%20text%20and%20plain%20text%20fields.%20However%2C%20media%20such%20as%20images%2C%20videos%2C%20and%20other%20files%2C%20are%20not%20yet%20supported.)).
+
+The CLI provided by this repository is able to do so and serves as a workaround until Atlassian provides this functionality out-of-the-box.
 
 ## How to
 

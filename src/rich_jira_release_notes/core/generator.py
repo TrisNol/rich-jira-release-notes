@@ -45,12 +45,3 @@ def generate_release_notes(
         with open(output_path, "w") as f:
             f.write(template.render(issues=issues))
         print(f"📄 - Release notes exported to {output_path}")
-
-
-if __name__ == "__main__":
-    from rich_jira_release_notes.libs.jira.config import get_jira_api_from_env
-
-    api = get_jira_api_from_env()
-    jql_query = 'project = DEV and fixVersion = "0.0.0"'
-    fields = ["Summary", "Release Notes"]  # Key and ID will always be included
-    generate_release_notes(api, jql_query, fields)

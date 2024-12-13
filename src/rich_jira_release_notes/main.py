@@ -11,8 +11,8 @@ app = typer.Typer()
 
 
 @app.command()
-def something():
-    print("Hello World")
+def version():
+    typer.echo("rich-jira-release-notes 0.0.0")
 
 
 @app.command()
