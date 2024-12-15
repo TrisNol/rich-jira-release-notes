@@ -3,7 +3,7 @@ import json
 
 from dotenv import load_dotenv
 
-from rich_jira_release_notes.libs.jira.jira_api import JiraAPI, JiraCredentialsModel
+from src.rich_jira_release_notes.libs.jira.jira_api import JiraAPI, JiraCredentialsModel
 
 
 def get_jira_api_from_env() -> JiraAPI:

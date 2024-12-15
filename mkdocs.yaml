@@ -1,0 +1,32 @@
+site_name: Rich Jira Release Notes
+site_author: Tristan Nolde
+repo_url: https://github.com/TrisNol/rich-jira-release-notes
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+  - scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+
+    # Palette toggle for dark mode
+  - scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+nav:
+- Home: README.md
+- Changelog: CHANGELOG.md
+- Code Reference: reference/
+- License: LICENSE.md
+
+plugins:
+- search
+- gen-files:
+    scripts:
+    - scripts/gen_ref_pages.py
+- literate-nav:
+    nav_file: SUMMARY.md
+- mkdocstrings
+- section-index
