@@ -11,13 +11,19 @@ readme = "README.md"
 version = "0.0.0"
 
 [tool.poetry.dependencies]
+beautifulsoup4 = "^4.12.3"
+jinja2 = "^3.1.4"
 loguru = "^0.7.3"
+markdownify = "^0.14.1"
+pydantic = "^2.10.3"
 python = "^3.12"
 python-dotenv = "^1.0.1"
+requests = "^2.32.3"
 typer = "^0.15.1"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.0.1"
+types-requests = "^2.32.0.20241016"
 
 [tool.poetry.scripts]
 rich-jira-release-notes = "rich_jira_release_notes.main:app"

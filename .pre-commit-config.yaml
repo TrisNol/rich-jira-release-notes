@@ -54,7 +54,7 @@ repos:
     - --explicit-package-bases
     - --ignore-missing-imports
     additional_dependencies:
-    - strawberry-graphql
+    - types-requests
 
 - repo: https://github.com/python-poetry/poetry
   rev: 1.7.0
