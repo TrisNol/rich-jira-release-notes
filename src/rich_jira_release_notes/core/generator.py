@@ -2,10 +2,10 @@ import os
 import markdownify
 
 from jinja2 import Template
-from rich import print
+from src.rich import print
 from bs4 import BeautifulSoup
 
-from rich_jira_release_notes.libs.jira.jira_api import JiraAPI
+from src.rich_jira_release_notes.libs.jira.jira_api import JiraAPI
 
 
 def generate_release_notes(
