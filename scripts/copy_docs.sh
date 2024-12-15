@@ -1,4 +1,8 @@
 #!/bin/sh
+if [ ! -d "docs" ]; then
+    mkdir docs
+fi
+
 if [ -f "README.md" ]; then
     cp README.md docs/
 fi

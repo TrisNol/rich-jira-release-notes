@@ -30,6 +30,7 @@ jobs:
 
     - name: 📄 Copy doc files
       run: |
+        chmod +x ./scripts/*
         ./scripts/copy_docs.sh
 
     - name: 📚 Build & deploy MkDocs
