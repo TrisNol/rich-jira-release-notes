@@ -3,10 +3,6 @@ if [ ! -d "docs" ]; then
     mkdir docs
 fi
 
-if [ -f "README.md" ]; then
-    cp README.md docs/
-fi
-
 if [ -f "CHANGELOG.md" ]; then
     cp CHANGELOG.md docs/
 fi
@@ -17,4 +13,8 @@ fi
 
 if [ -f "LICENSE" ]; then
     cp LICENSE docs/LICENSE.md
+fi
+
+if [ -f "template.md.jinja" ]; then
+    cp LICENSE docs/template.md.jinja
 fi
