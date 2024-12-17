@@ -8,7 +8,7 @@ description = ""
 license = "MIT"
 name = "rich-jira-release-notes"
 readme = "./docs/README.md"
-version = "0.0.0"
+version = "0.1.0-rc.1"
 
 [tool.poetry.dependencies]
 beautifulsoup4 = "^4.12.3"
@@ -47,7 +47,6 @@ commit_parser = "angular"
 logging_use_named_masks = false
 major_on_zero = true
 no_git_verify = false
-repo_dir = "/workspaces/rich-jira-release-notes"
 tag_format = "v{version}"
 version_toml = [
   "pyproject.toml:tool.poetry.version"
@@ -55,7 +54,7 @@ version_toml = [
 version_variables = ["src/rich_jira_release_notes/main.py:__version__"]
 
 [tool.semantic_release.branches.develop]
-match = "build/semantic-release"
+match = "develop"
 prerelease = true
 prerelease_token = "rc"
 
