@@ -7,7 +7,7 @@ authors = []
 description = ""
 license = "MIT"
 name = "rich-jira-release-notes"
-readme = "README.md"
+readme = "./docs/README.md"
 version = "0.0.0"
 
 [tool.poetry.dependencies]
