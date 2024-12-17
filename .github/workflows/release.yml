@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+    - main
+    - develop
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: 🚚 Checkout code
+      uses: actions/checkout@v3
+
+    - name: 🐍 Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.12
+
+    - name: 📦 Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+
+    - name: 📥 Install dependencies
+      run: |
+        poetry install
+
+    - name: 🐍 Python Semantic Release
+      uses: python-semantic-release/python-semantic-release@v9.15.2
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
