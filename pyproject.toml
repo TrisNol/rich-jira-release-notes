@@ -108,3 +108,6 @@ ignore_token_for_push = false
 insecure = false
 name = "origin"
 type = "github"
+
+[tool.semantic_release.remote.token]
+env = "github_token"
