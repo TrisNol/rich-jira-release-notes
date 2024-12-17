@@ -34,4 +34,4 @@ jobs:
         ./scripts/copy_docs.sh
 
     - name: 📚 Build & deploy MkDocs
-      run: mkdocs gh-deploy --force
+      run: poetry run mkdocs gh-deploy --force
