@@ -1,10 +1,10 @@
 import typer
 
-from src.rich_jira_release_notes.libs.jira.config import (
+from rich_jira_release_notes.libs.jira.config import (
     get_jira_api_from_env,
     get_jira_api_from_json,
 )
-from src.rich_jira_release_notes.core.generator import generate_release_notes
+from rich_jira_release_notes.core.generator import generate_release_notes
 
 
 app = typer.Typer()
