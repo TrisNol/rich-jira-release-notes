@@ -1,0 +1,26 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.isort",
+        "ms-python.black-formatter",
+        "sonarsource.sonarlint-vscode",
+        "njpwerner.autodocstring",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+    "source=${localWorkspaceFolderBasename}-venv,target=${containerWorkspaceFolder}/.venv,type=volume"
+  ],
+  "runArgs": [
+    "--privileged",
+    "--network=host",
+    "--add-host=host.docker.internal:host-gateway"
+  ]
+}
