@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.0 (2024-12-17)
+
+### Chores
+
+- Merge 'develop' into 'main' #7
+  ([`b3b8d52`](https://github.com/TrisNol/rich-jira-release-notes/commit/b3b8d52fa67c06f8eb6eb345eecb469dbdcb6fb5))
+
+
 ## v0.1.0-rc.1 (2024-12-17)
 
 ### Bug Fixes
@@ -50,6 +58,11 @@
 * build: MkDocs config + pipeliine
 
 * ci: Enable manual trigger for docs. build pipeline
+
+### Chores
+
+- **release**: V0.1.0-rc.1 [skip ci]
+  ([`c310593`](https://github.com/TrisNol/rich-jira-release-notes/commit/c310593468970cc78d15391995962ad331551813))
 
 ### Documentation
 
