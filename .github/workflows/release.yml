@@ -32,6 +32,14 @@ jobs:
         poetry install
 
     - name: 🐍 Python Semantic Release
+      id: release
       uses: python-semantic-release/python-semantic-release@v9.15.2
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 🐍 Publish | Upload to GitHub Release Assets
+      uses: python-semantic-release/publish-action@v9.15.2
+      if: steps.release.outputs.released == 'true'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ steps.release.outputs.tag }}
