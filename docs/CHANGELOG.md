@@ -1,6 +1,72 @@
 # CHANGELOG
 
 
+## v0.1.1 (2024-12-18)
+
+### Build System
+
+- **deps**: Bump actions/checkout from 3 to 4
+  ([#9](https://github.com/TrisNol/rich-jira-release-notes/pull/9),
+  [`30cd346`](https://github.com/TrisNol/rich-jira-release-notes/commit/30cd346b251b6f67cdad0fd813c522f4b39bfcf7))
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4. - [Release
+  notes](https://github.com/actions/checkout/releases) -
+  [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/actions/checkout/compare/v3...v4)
+
+--- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
+
+update-type: version-update:semver-major
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump actions/setup-python from 4 to 5
+  ([#8](https://github.com/TrisNol/rich-jira-release-notes/pull/8),
+  [`76585f4`](https://github.com/TrisNol/rich-jira-release-notes/commit/76585f4e32bf5f0639a9592ce1c3ddb65a0b9891))
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5. - [Release
+  notes](https://github.com/actions/setup-python/releases) -
+  [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+--- updated-dependencies: - dependency-name: actions/setup-python dependency-type: direct:production
+
+update-type: version-update:semver-major
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocs-material from 9.5.48 to 9.5.49
+  ([#10](https://github.com/TrisNol/rich-jira-release-notes/pull/10),
+  [`c667b64`](https://github.com/TrisNol/rich-jira-release-notes/commit/c667b64d0713383029b9be88e38a605171e77ffd))
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.5.48 to 9.5.49. -
+  [Release notes](https://github.com/squidfunk/mkdocs-material/releases) -
+  [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG) -
+  [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.5.48...9.5.49)
+
+--- updated-dependencies: - dependency-name: mkdocs-material dependency-type: direct:development
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Chores
+
+- Merge 'develop' into 'main'
+  ([`faf31aa`](https://github.com/TrisNol/rich-jira-release-notes/commit/faf31aabe7eb5799d2658139a3973b487e3ed36a))
+
+
 ## v0.1.1-rc.1 (2024-12-17)
 
 ### Bug Fixes
@@ -17,6 +83,9 @@
 
 - Merge branch 'main' into develop
   ([`3f12a5b`](https://github.com/TrisNol/rich-jira-release-notes/commit/3f12a5bac02eb44157cd3d753afa305a7eebdaf7))
+
+- **release**: V0.1.1-rc.1 [skip ci]
+  ([`d7d8396`](https://github.com/TrisNol/rich-jira-release-notes/commit/d7d8396759b766e3c5d2c16857c58255d1a435d3))
 
 
 ## v0.1.0 (2024-12-17)
