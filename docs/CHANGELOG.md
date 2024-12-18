@@ -1,12 +1,33 @@
 # CHANGELOG
 
 
+## v0.1.1-rc.1 (2024-12-17)
+
+### Bug Fixes
+
+- **docs**: Resolve MkDocs issue
+  ([`2c1232f`](https://github.com/TrisNol/rich-jira-release-notes/commit/2c1232f8d6f72a1650335d1c601e875f132280d2))
+
+### Build System
+
+- Configure remote token for python-semantic-release
+  ([`622e60c`](https://github.com/TrisNol/rich-jira-release-notes/commit/622e60cf13578e8815e015eeb1685f704385a097))
+
+### Chores
+
+- Merge branch 'main' into develop
+  ([`3f12a5b`](https://github.com/TrisNol/rich-jira-release-notes/commit/3f12a5bac02eb44157cd3d753afa305a7eebdaf7))
+
+
 ## v0.1.0 (2024-12-17)
 
 ### Chores
 
 - Merge 'develop' into 'main' #7
   ([`b3b8d52`](https://github.com/TrisNol/rich-jira-release-notes/commit/b3b8d52fa67c06f8eb6eb345eecb469dbdcb6fb5))
+
+- **release**: V0.1.0 [skip ci]
+  ([`a6df0c9`](https://github.com/TrisNol/rich-jira-release-notes/commit/a6df0c9eb58d6ad43038ce95030037c4103563ed))
 
 
 ## v0.1.0-rc.1 (2024-12-17)

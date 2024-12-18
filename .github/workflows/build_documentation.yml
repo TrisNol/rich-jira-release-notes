@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - name: 🚚 Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: 🐍 Set up Python 3.12
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.12
 
@@ -34,4 +34,4 @@ jobs:
         ./scripts/copy_docs.sh
 
     - name: 📚 Build & deploy MkDocs
-      run: mkdocs gh-deploy --force
+      run: poetry run mkdocs gh-deploy --force
