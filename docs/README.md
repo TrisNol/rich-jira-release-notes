@@ -69,7 +69,7 @@ The CLI provided by this repository is able to do so and serves as a workaround 
     Example:
 
     ```
-    rich-jira-release-notes generate 'project = DEV and fixVersion = "4.2.0"' fields="Summary, Release Notes"
+    rich-jira-release-notes generate 'project = DEV and fixVersion = "4.2.0"' "Summary, Release Notes, Checkboxes"
     ```
 
 4. Retrieve release notes from the `dist/` directory
