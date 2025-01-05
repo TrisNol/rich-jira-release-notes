@@ -1,6 +1,78 @@
 # CHANGELOG
 
 
+## v0.1.2-rc.1 (2025-01-05)
+
+### Bug Fixes
+
+- **libs**: Enable handling of checkbox fields
+  ([`7e79935`](https://github.com/TrisNol/rich-jira-release-notes/commit/7e7993561f42467d17b7623f45874a030f6f0ce3))
+
+### Build System
+
+- **deps**: Bump jinja2 from 3.1.4 to 3.1.5
+  ([#14](https://github.com/TrisNol/rich-jira-release-notes/pull/14),
+  [`37eac31`](https://github.com/TrisNol/rich-jira-release-notes/commit/37eac316c607900729dc945a4b399af14934f7de))
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.4 to 3.1.5. - [Release
+  notes](https://github.com/pallets/jinja/releases) -
+  [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/jinja/compare/3.1.4...3.1.5)
+
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump pydantic from 2.10.3 to 2.10.4
+  ([#12](https://github.com/TrisNol/rich-jira-release-notes/pull/12),
+  [`2f9ddfa`](https://github.com/TrisNol/rich-jira-release-notes/commit/2f9ddfa134440a83764b81bba62bd4079d805946))
+
+Bumps [pydantic](https://github.com/pydantic/pydantic) from 2.10.3 to 2.10.4. - [Release
+  notes](https://github.com/pydantic/pydantic/releases) -
+  [Changelog](https://github.com/pydantic/pydantic/blob/main/HISTORY.md) -
+  [Commits](https://github.com/pydantic/pydantic/compare/v2.10.3...v2.10.4)
+
+--- updated-dependencies: - dependency-name: pydantic dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocstrings-python from 1.12.2 to 1.13.0
+  ([#16](https://github.com/TrisNol/rich-jira-release-notes/pull/16),
+  [`b656dbe`](https://github.com/TrisNol/rich-jira-release-notes/commit/b656dbec42d7e6bfb13bd2745c33f6de0589f8c2))
+
+Bumps [mkdocstrings-python](https://github.com/mkdocstrings/python) from 1.12.2 to 1.13.0. -
+  [Release notes](https://github.com/mkdocstrings/python/releases) -
+  [Changelog](https://github.com/mkdocstrings/python/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/mkdocstrings/python/compare/1.12.2...1.13.0)
+
+--- updated-dependencies: - dependency-name: mkdocstrings-python dependency-type: direct:development
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Chores
+
+- Merge 'main' into 'develop' [skip ci]
+  ([`1129d42`](https://github.com/TrisNol/rich-jira-release-notes/commit/1129d424adb11bbfc4e547d40c6d2a47eacfe657))
+
+
 ## v0.1.1 (2024-12-18)
 
 ### Build System
@@ -65,6 +137,9 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 - Merge 'develop' into 'main'
   ([`faf31aa`](https://github.com/TrisNol/rich-jira-release-notes/commit/faf31aabe7eb5799d2658139a3973b487e3ed36a))
+
+- **release**: V0.1.1 [skip ci]
+  ([`03f399d`](https://github.com/TrisNol/rich-jira-release-notes/commit/03f399d039e427990a07247342d8a3dc47684110))
 
 
 ## v0.1.1-rc.1 (2024-12-17)
