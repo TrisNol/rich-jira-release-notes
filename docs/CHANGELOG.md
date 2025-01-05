@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.2 (2025-01-05)
+
+### Chores
+
+- Merge 'develop' into 'main' ([#18](https://github.com/TrisNol/rich-jira-release-notes/pull/18),
+  [`8469656`](https://github.com/TrisNol/rich-jira-release-notes/commit/8469656fe9ec3ac516cb084709b157a07c097283))
+
+
 ## v0.1.2-rc.1 (2025-01-05)
 
 ### Bug Fixes
@@ -71,6 +79,9 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 - Merge 'main' into 'develop' [skip ci]
   ([`1129d42`](https://github.com/TrisNol/rich-jira-release-notes/commit/1129d424adb11bbfc4e547d40c6d2a47eacfe657))
+
+- **release**: V0.1.2-rc.1 [skip ci]
+  ([`1a39811`](https://github.com/TrisNol/rich-jira-release-notes/commit/1a39811cc43f1d8633c3d9f942c7e0c55730e049))
 
 
 ## v0.1.1 (2024-12-18)
