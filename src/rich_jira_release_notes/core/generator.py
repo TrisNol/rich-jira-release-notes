@@ -17,7 +17,10 @@ def generate_release_notes(
     template_file: str = "./template.md.jinja",
 ) -> None:
     issues = api.get_issues(query, fields)
-    print(f"🤖 - Found {len(issues)} issues")
+    if len(issues) == 0:
+        print("🤖 - No issues found")
+        return
+    print(f"🤖 - Retrieved {len(issues)} issues")
 
     assets_dir_path = f"{output_dir}/assets"
     os.makedirs(assets_dir_path, exist_ok=True)

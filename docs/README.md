@@ -34,14 +34,26 @@ The CLI provided by this repository is able to do so and serves as a workaround 
 
 1. Create an `.env` file of the following structure
 
-        JIRA_URL=
-        JIRA_USER=
-        JIRA_TOKEN=
+        JIRA_URL=<your_domain>.atlassian.net
+        JIRA_USER=<mail of the service/human user providing the token>
+        JIRA_TOKEN=<PAT>
         
 
     Alternatively, you can provide those values as regular env. variables
 
-2. Create a [Jinja template](https://jinja.palletsprojects.com/en/stable/) in your project ([Example](./template.md.jinja))
+2. Create a [Jinja template](https://jinja.palletsprojects.com/en/stable/) in your project ([Example](./template.md.jinja)). You will have access to a variable called `issues` representing a list of objects of type `JiraIssue`:
+    ```python
+    class JiraIssue(BaseModel):
+        id: str # Jira internal ticket ID
+        key: str # Ticket number (<project>-<number>)
+        fields: dict[str, JiraField] # Ticket fields retrieved
+    ```
+    A `JiraField` exposes an attribute `value` of different datatypes depending on the `type` of field selected:
+
+    - `JiraFieldType.TEXT`: Contains raw text
+    - `JiraFieldType.RICH_TEXT`: Contains rich text in Markdown format
+    - `JiraFieldType.CHECKBOX`: Contains a list of strings representing the ticked checkboxes of the field
+
 
 3. Construct a [JQL query](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/) fitting your use case; example:
 
