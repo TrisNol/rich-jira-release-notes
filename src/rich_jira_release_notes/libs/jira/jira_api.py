@@ -3,6 +3,7 @@ import requests
 
 from requests.auth import HTTPBasicAuth
 from pydantic import BaseModel
+from enum import Enum
 
 
 class JiraCredentialsModel(BaseModel):
@@ -10,9 +11,33 @@ class JiraCredentialsModel(BaseModel):
     token: str
 
 
+class JiraFieldType(Enum):
+    TEXT = "TEXT"
+    RICH_TEXT = "RICH_TEXT"
+    DATE = "DATE"
+    NUMBER = "NUMBER"
+    CHECKBOX = "CHECKBOX"
+
+
 class JiraField(BaseModel):
-    is_rendered: bool
-    content: str
+    type: JiraFieldType
+    value: str | list  # to account for different types of fields
+
+    @property
+    def is_rendered(self) -> bool:
+        return self.type == JiraFieldType.RICH_TEXT
+
+    @is_rendered.setter
+    def is_rendered(self, value: bool) -> None:
+        raise AttributeError("Cannot set attribute 'is_rendered'")
+
+    @property
+    def content(self) -> str:
+        return str(self.value)
+
+    @content.setter
+    def content(self, value: str) -> None:
+        self.value = value
 
 
 class JiraIssue(BaseModel):
@@ -74,19 +99,25 @@ class JiraAPI:
                     and issue["renderedFields"][field_value] is not None
                 ):
                     entry["fields"][field_key] = JiraField(
-                        is_rendered=True, content=issue["renderedFields"][field_value]
+                        value=issue["renderedFields"][field_value],
+                        type=JiraFieldType.RICH_TEXT,
                     )
                 elif (
                     field_value in issue["fields"]
                     and issue["fields"][field_value] is not None
                 ):
-                    entry["fields"][field_key] = JiraField(
-                        is_rendered=False, content=issue["fields"][field_value]
-                    )
-                else:
-                    raise ValueError(
-                        f"Field {field_value} not found in issue {issue['key']}"
-                    )
+                    print(issue["fields"][field_value])
+                    if isinstance(issue["fields"][field_value], list):
+                        entry["fields"][field_key] = JiraField(
+                            value=[
+                                entry["value"] for entry in issue["fields"][field_value]
+                            ],
+                            type=JiraFieldType.CHECKBOX,
+                        )
+                    else:
+                        entry["fields"][field_key] = JiraField(
+                            value=issue["fields"][field_value], type=JiraFieldType.TEXT
+                        )
             result.append(entry)
         return [JiraIssue(**issue) for issue in result]
 
