@@ -1,6 +1,99 @@
 # CHANGELOG
 
 
+## v0.2.0-rc.1 (2025-02-04)
+
+### Build System
+
+- **deps**: Bump pydantic from 2.10.4 to 2.10.6
+  ([#27](https://github.com/TrisNol/rich-jira-release-notes/pull/27),
+  [`cde1afb`](https://github.com/TrisNol/rich-jira-release-notes/commit/cde1afbb453ea5a3c7819ad049c45dfeb86a15fd))
+
+Bumps [pydantic](https://github.com/pydantic/pydantic) from 2.10.4 to 2.10.6. - [Release
+  notes](https://github.com/pydantic/pydantic/releases) -
+  [Changelog](https://github.com/pydantic/pydantic/blob/main/HISTORY.md) -
+  [Commits](https://github.com/pydantic/pydantic/compare/v2.10.4...v2.10.6)
+
+--- updated-dependencies: - dependency-name: pydantic dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump python-semantic-release/publish-action
+  ([#23](https://github.com/TrisNol/rich-jira-release-notes/pull/23),
+  [`a34848e`](https://github.com/TrisNol/rich-jira-release-notes/commit/a34848eae59a8a92e13b597b48d1e28f9512a8f1))
+
+Bumps
+  [python-semantic-release/publish-action](https://github.com/python-semantic-release/publish-action)
+  from 9.15.2 to 9.16.1. - [Release
+  notes](https://github.com/python-semantic-release/publish-action/releases) -
+  [Changelog](https://github.com/python-semantic-release/publish-action/blob/main/releaserc.toml) -
+  [Commits](https://github.com/python-semantic-release/publish-action/compare/v9.15.2...v9.16.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/publish-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([#24](https://github.com/TrisNol/rich-jira-release-notes/pull/24),
+  [`b42900d`](https://github.com/TrisNol/rich-jira-release-notes/commit/b42900d584319d98dac9d55ef321015c31469434))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.15.2 to 9.16.1. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.15.2...v9.16.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocs-material from 9.5.49 to 9.5.50
+  ([#25](https://github.com/TrisNol/rich-jira-release-notes/pull/25),
+  [`5c60777`](https://github.com/TrisNol/rich-jira-release-notes/commit/5c6077709711871db7eb751e45b023af572a454a))
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.5.49 to 9.5.50. -
+  [Release notes](https://github.com/squidfunk/mkdocs-material/releases) -
+  [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG) -
+  [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.5.49...9.5.50)
+
+--- updated-dependencies: - dependency-name: mkdocs-material dependency-type: direct:development
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Features
+
+- **core**: Export ticket type
+  ([`50a376e`](https://github.com/TrisNol/rich-jira-release-notes/commit/50a376e0f0208e9576b11e6098761c2f0682317d))
+
+
 ## v0.1.2-rc.1 (2025-01-05)
 
 ### Bug Fixes
@@ -138,9 +231,6 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 - Merge 'develop' into 'main'
   ([`faf31aa`](https://github.com/TrisNol/rich-jira-release-notes/commit/faf31aabe7eb5799d2658139a3973b487e3ed36a))
 
-- **release**: V0.1.1 [skip ci]
-  ([`03f399d`](https://github.com/TrisNol/rich-jira-release-notes/commit/03f399d039e427990a07247342d8a3dc47684110))
-
 
 ## v0.1.1-rc.1 (2024-12-17)
 
@@ -159,9 +249,6 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 - Merge branch 'main' into develop
   ([`3f12a5b`](https://github.com/TrisNol/rich-jira-release-notes/commit/3f12a5bac02eb44157cd3d753afa305a7eebdaf7))
 
-- **release**: V0.1.1-rc.1 [skip ci]
-  ([`d7d8396`](https://github.com/TrisNol/rich-jira-release-notes/commit/d7d8396759b766e3c5d2c16857c58255d1a435d3))
-
 
 ## v0.1.0 (2024-12-17)
 
@@ -169,9 +256,6 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 - Merge 'develop' into 'main' #7
   ([`b3b8d52`](https://github.com/TrisNol/rich-jira-release-notes/commit/b3b8d52fa67c06f8eb6eb345eecb469dbdcb6fb5))
-
-- **release**: V0.1.0 [skip ci]
-  ([`a6df0c9`](https://github.com/TrisNol/rich-jira-release-notes/commit/a6df0c9eb58d6ad43038ce95030037c4103563ed))
 
 
 ## v0.1.0-rc.1 (2024-12-17)
@@ -223,11 +307,6 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 * build: MkDocs config + pipeliine
 
 * ci: Enable manual trigger for docs. build pipeline
-
-### Chores
-
-- **release**: V0.1.0-rc.1 [skip ci]
-  ([`c310593`](https://github.com/TrisNol/rich-jira-release-notes/commit/c310593468970cc78d15391995962ad331551813))
 
 ### Documentation
 
