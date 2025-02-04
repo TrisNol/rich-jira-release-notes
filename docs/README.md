@@ -46,6 +46,7 @@ The CLI provided by this repository is able to do so and serves as a workaround 
     class JiraIssue(BaseModel):
         id: str # Jira internal ticket ID
         key: str # Ticket number (<project>-<number>)
+        type: str # one of: ["Bug", "Story", "Task", "Epic", "Sub-task"]
         fields: dict[str, JiraField] # Ticket fields retrieved
     ```
     A `JiraField` exposes an attribute `value` of different datatypes depending on the `type` of field selected:
@@ -81,7 +82,7 @@ The CLI provided by this repository is able to do so and serves as a workaround 
     Example:
 
     ```
-    rich-jira-release-notes generate 'project = DEV and fixVersion = "4.2.0"' "Summary, Release Notes, Checkboxes"
+    rich-jira-release-notes generate 'project = DEV and fixVersion = "0.0.0"' "Summary, Release Notes, Checkboxes"
     ```
 
 4. Retrieve release notes from the `dist/` directory

@@ -1,6 +1,13 @@
 # Release Notes 0.0.0
 
-{% for issue in issues %}
+## Features
+{% for issue in issues if issue.type in ["Story", "Task", "Epic"]%}
+## {{ issue.key }}: {{ issue.fields.get("Summary").content }}
+{{ issue.fields.get("Release Notes").content }}
+{% endfor %}
+
+## Bugs
+{% for issue in issues if issue.type in ["Bug"]%}
 ## {{ issue.key }}: {{ issue.fields.get("Summary").content }}
 {{ issue.fields.get("Release Notes").content }}
 {% endfor %}
