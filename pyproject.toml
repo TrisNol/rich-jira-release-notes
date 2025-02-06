@@ -24,7 +24,7 @@ typer = "^0.15.1"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.0.1"
-python-semantic-release = "^9.15.2"
+python-semantic-release = "^9.18.0"
 types-requests = "^2.32.0.20241016"
 
 [tool.poetry.group.docs.dependencies]
