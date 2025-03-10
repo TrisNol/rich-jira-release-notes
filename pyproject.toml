@@ -19,7 +19,7 @@ pydantic = "^2.10.6"
 python = "^3.12"
 python-dotenv = "^1.0.1"
 requests = "^2.32.3"
-setuptools = "^75.6.0"
+setuptools = "^75.9.1"
 typer = "^0.15.1"
 
 [tool.poetry.group.dev.dependencies]
