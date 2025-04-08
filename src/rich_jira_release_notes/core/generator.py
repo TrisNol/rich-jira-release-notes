@@ -43,7 +43,6 @@ def generate_release_notes(
                     tt.name = "code"
                     tt["class"] = "jira-code"
                 if convert_to_markdown is True:
-                    print(soup.prettify())
                     issue.fields[field_key].content = markdownify.markdownify(
                         soup.prettify(),
                         heading_style="ATX",
