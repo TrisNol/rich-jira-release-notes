@@ -1,6 +1,165 @@
 # CHANGELOG
 
 
+## v0.2.0-rc.2 (2025-04-08)
+
+### Bug Fixes
+
+- **core**: Resolve some minor issues
+  ([`5cf1c40`](https://github.com/TrisNol/rich-jira-release-notes/commit/5cf1c4005e694ab0868da58788fc2c8b8d5af23b))
+
+* leading underscores & asterisks in text elements are no longer escaped
+
+* inline code statements (exported as <tt> elements) are transformed for proper markdown
+  highlighting
+
+### Build System
+
+- **deps**: Bump dependencies
+  ([`697fb7f`](https://github.com/TrisNol/rich-jira-release-notes/commit/697fb7f2f8b1cbf52834ae4e986b9976ba331eb5))
+
+- **deps**: Bump python-semantic-release/publish-action
+  ([#46](https://github.com/TrisNol/rich-jira-release-notes/pull/46),
+  [`7e39aa5`](https://github.com/TrisNol/rich-jira-release-notes/commit/7e39aa50e139c681f1a11f6f094240097185b271))
+
+Bumps
+  [python-semantic-release/publish-action](https://github.com/python-semantic-release/publish-action)
+  from 9.16.1 to 9.19.1. - [Release
+  notes](https://github.com/python-semantic-release/publish-action/releases) -
+  [Changelog](https://github.com/python-semantic-release/publish-action/blob/main/releaserc.toml) -
+  [Commits](https://github.com/python-semantic-release/publish-action/compare/v9.16.1...v9.19.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/publish-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump python-semantic-release/publish-action
+  ([#59](https://github.com/TrisNol/rich-jira-release-notes/pull/59),
+  [`d72be12`](https://github.com/TrisNol/rich-jira-release-notes/commit/d72be12ee64f772e2a1a4c82cf901a6e6dd14289))
+
+Bumps
+  [python-semantic-release/publish-action](https://github.com/python-semantic-release/publish-action)
+  from 9.19.1 to 9.21.0. - [Release
+  notes](https://github.com/python-semantic-release/publish-action/releases) -
+  [Changelog](https://github.com/python-semantic-release/publish-action/blob/main/releaserc.toml) -
+  [Commits](https://github.com/python-semantic-release/publish-action/compare/v9.19.1...v9.21.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/publish-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([#47](https://github.com/TrisNol/rich-jira-release-notes/pull/47),
+  [`6fd4103`](https://github.com/TrisNol/rich-jira-release-notes/commit/6fd41039d3c77fa8c24b6cd8bbf92e3facec7575))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.16.1 to 9.19.1. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.16.1...v9.19.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([#58](https://github.com/TrisNol/rich-jira-release-notes/pull/58),
+  [`6eb82d1`](https://github.com/TrisNol/rich-jira-release-notes/commit/6eb82d1f951f094df91c764ceb9c056e388e6cb2))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.19.1 to 9.21.0. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.19.1...v9.21.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocs-material from 9.6.3 to 9.6.4
+  ([#50](https://github.com/TrisNol/rich-jira-release-notes/pull/50),
+  [`c9fdba3`](https://github.com/TrisNol/rich-jira-release-notes/commit/c9fdba3450a7293b938a85674ff791bb75fe6e50))
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.6.3 to 9.6.4. -
+  [Release notes](https://github.com/squidfunk/mkdocs-material/releases) -
+  [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG) -
+  [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.6.3...9.6.4)
+
+--- updated-dependencies: - dependency-name: mkdocs-material dependency-type: direct:development
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocstrings-python from 1.14.6 to 1.15.0
+  ([#49](https://github.com/TrisNol/rich-jira-release-notes/pull/49),
+  [`e9b4a06`](https://github.com/TrisNol/rich-jira-release-notes/commit/e9b4a06cd41ec3dfede449476b79b78c33dc1b23))
+
+Bumps [mkdocstrings-python](https://github.com/mkdocstrings/python) from 1.14.6 to 1.15.0. -
+  [Release notes](https://github.com/mkdocstrings/python/releases) -
+  [Changelog](https://github.com/mkdocstrings/python/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/mkdocstrings/python/compare/1.14.6...1.15.0)
+
+--- updated-dependencies: - dependency-name: mkdocstrings-python dependency-type: direct:development
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump python-semantic-release from 9.18.1 to 9.19.1
+  ([#48](https://github.com/TrisNol/rich-jira-release-notes/pull/48),
+  [`deae3cf`](https://github.com/TrisNol/rich-jira-release-notes/commit/deae3cf9ac970adcbb8ac9d810323be03d03113d))
+
+Bumps [python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.18.1 to 9.19.1. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.18.1...v9.19.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release dependency-type:
+  direct:development
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Chores
+
+- **deps**: Bump dependencies ([#42](https://github.com/TrisNol/rich-jira-release-notes/pull/42),
+  [`b6d1fd5`](https://github.com/TrisNol/rich-jira-release-notes/commit/b6d1fd5e5736f19fd499f59800a84f2c171a05ac))
+
+
 ## v0.2.0-rc.1 (2025-02-04)
 
 ### Build System
@@ -16,9 +175,7 @@ Bumps [pydantic](https://github.com/pydantic/pydantic) from 2.10.4 to 2.10.6. - 
 
 --- updated-dependencies: - dependency-name: pydantic dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -38,9 +195,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/publish-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -61,9 +216,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -80,9 +233,7 @@ Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.5.4
 
 --- updated-dependencies: - dependency-name: mkdocs-material dependency-type: direct:development
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -114,9 +265,7 @@ Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.4 to 3.1.5. - [Release
 
 --- updated-dependencies: - dependency-name: jinja2 dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -133,9 +282,7 @@ Bumps [pydantic](https://github.com/pydantic/pydantic) from 2.10.3 to 2.10.4. - 
 
 --- updated-dependencies: - dependency-name: pydantic dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -152,9 +299,7 @@ Bumps [mkdocstrings-python](https://github.com/mkdocstrings/python) from 1.12.2 
 
 --- updated-dependencies: - dependency-name: mkdocstrings-python dependency-type: direct:development
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -181,9 +326,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4. - [Re
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -199,9 +342,7 @@ Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-python dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -218,9 +359,7 @@ Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.5.4
 
 --- updated-dependencies: - dependency-name: mkdocs-material dependency-type: direct:development
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
