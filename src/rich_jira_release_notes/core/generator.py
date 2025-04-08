@@ -28,6 +28,8 @@ def generate_release_notes(
         for field_key, field_content in issue.fields.items():
             if field_content.is_rendered:
                 soup = BeautifulSoup(field_content.content, "html.parser")
+
+                # Fix images
                 images = soup.find_all("img")
                 for image in images:
                     path = f"{assets_dir_path}/{image.get('alt')}"
@@ -35,9 +37,17 @@ def generate_release_notes(
                     image["src"] = "assets/" + image.get("alt")
 
                     print(f"🤖 - {image.get('alt')} has been downloaded")
+
+                # Convert deprecated <tt> tags to <code> tags
+                for tt in soup.find_all("tt"):
+                    tt.name = "code"
+                    tt["class"] = "jira-code"
                 if convert_to_markdown is True:
                     issue.fields[field_key].content = markdownify.markdownify(
-                        soup.prettify(), heading_style="ATX"
+                        soup.prettify(),
+                        heading_style="ATX",
+                        escape_underscores=False,
+                        escape_asterisks=False,
                     )
 
     # TODO - When templating the is_rendered field does not matter, model data differently
