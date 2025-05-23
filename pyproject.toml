@@ -20,7 +20,7 @@ python = "^3.12"
 python-dotenv = "^1.0.1"
 requests = "^2.32.3"
 setuptools = "^75.6.0"
-typer = "^0.15.1"
+typer = "^0.15.4"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.0.1"
