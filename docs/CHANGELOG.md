@@ -1,6 +1,163 @@
 # CHANGELOG
 
 
+## v0.2.0-rc.3 (2025-06-20)
+
+### Build System
+
+- **deps**: Bump pydantic from 2.11.3 to 2.11.5
+  ([#101](https://github.com/TrisNol/rich-jira-release-notes/pull/101),
+  [`9a5eff6`](https://github.com/TrisNol/rich-jira-release-notes/commit/9a5eff61ad74328babe733a3c124cd4327f127b9))
+
+Bumps [pydantic](https://github.com/pydantic/pydantic) from 2.11.3 to 2.11.5. - [Release
+  notes](https://github.com/pydantic/pydantic/releases) -
+  [Changelog](https://github.com/pydantic/pydantic/blob/main/HISTORY.md) -
+  [Commits](https://github.com/pydantic/pydantic/compare/v2.11.3...v2.11.5)
+
+--- updated-dependencies: - dependency-name: pydantic dependency-version: 2.11.5
+
+dependency-type: direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump requests from 2.32.3 to 2.32.4
+  ([#108](https://github.com/TrisNol/rich-jira-release-notes/pull/108),
+  [`e8cdbb0`](https://github.com/TrisNol/rich-jira-release-notes/commit/e8cdbb0bb1f5317300556883d8fc560d656fc1b2))
+
+Bumps [requests](https://github.com/psf/requests) from 2.32.3 to 2.32.4. - [Release
+  notes](https://github.com/psf/requests/releases) -
+  [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md) -
+  [Commits](https://github.com/psf/requests/compare/v2.32.3...v2.32.4)
+
+--- updated-dependencies: - dependency-name: requests dependency-version: 2.32.4
+
+dependency-type: direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump typer from 0.15.2 to 0.16.0
+  ([#105](https://github.com/TrisNol/rich-jira-release-notes/pull/105),
+  [`74f6620`](https://github.com/TrisNol/rich-jira-release-notes/commit/74f6620fe03f79827eb96676b92e0efe71f9413b))
+
+Bumps [typer](https://github.com/fastapi/typer) from 0.15.2 to 0.16.0. - [Release
+  notes](https://github.com/fastapi/typer/releases) -
+  [Changelog](https://github.com/fastapi/typer/blob/master/docs/release-notes.md) -
+  [Commits](https://github.com/fastapi/typer/compare/0.15.2...0.16.0)
+
+--- updated-dependencies: - dependency-name: typer dependency-version: 0.16.0
+
+dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocs-material from 9.6.12 to 9.6.14
+  ([#97](https://github.com/TrisNol/rich-jira-release-notes/pull/97),
+  [`d640848`](https://github.com/TrisNol/rich-jira-release-notes/commit/d6408481818f93c4bb155389256298e7f2306bfb))
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.6.12 to 9.6.14. -
+  [Release notes](https://github.com/squidfunk/mkdocs-material/releases) -
+  [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG) -
+  [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.6.12...9.6.14)
+
+--- updated-dependencies: - dependency-name: mkdocs-material dependency-version: 9.6.14
+
+dependency-type: direct:development
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mkdocstrings-python from 1.16.10 to 1.16.12
+  ([#107](https://github.com/TrisNol/rich-jira-release-notes/pull/107),
+  [`3b51e82`](https://github.com/TrisNol/rich-jira-release-notes/commit/3b51e82e9bef504f76a761d2bfc352e58b7c51ef))
+
+Bumps [mkdocstrings-python](https://github.com/mkdocstrings/python) from 1.16.10 to 1.16.12. -
+  [Release notes](https://github.com/mkdocstrings/python/releases) -
+  [Changelog](https://github.com/mkdocstrings/python/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/mkdocstrings/python/compare/1.16.10...1.16.12)
+
+--- updated-dependencies: - dependency-name: mkdocstrings-python dependency-version: 1.16.12
+
+dependency-type: direct:development
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump python-semantic-release from 9.21.0 to 9.21.1
+  ([#95](https://github.com/TrisNol/rich-jira-release-notes/pull/95),
+  [`fca3697`](https://github.com/TrisNol/rich-jira-release-notes/commit/fca36974b50019e20b610ae440fcbd1697062dbb))
+
+Bumps [python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.21.0 to 9.21.1. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.21...v9.21.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release dependency-version: 9.21.1
+
+dependency-type: direct:development
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Chores
+
+- **deps**: Bump deps ([#87](https://github.com/TrisNol/rich-jira-release-notes/pull/87),
+  [`fdb0c29`](https://github.com/TrisNol/rich-jira-release-notes/commit/fdb0c29582e8645daf1748136160589a8b1ac024))
+
+- Updated platformdirs from 4.3.6 to 4.3.7 - Updated typing-extensions from 4.12.2 to 4.13.1 -
+  Updated filelock from 3.17.0 to 3.18.0 - Updated mkdocs-autorefs from 1.4.0 to 1.4.1 - Updated
+  pydantic-core from 2.27.2 to 2.33.1 - Installed typing-inspection 0.4.0 - Updated
+  click-option-group from 0.5.6 to 0.5.7 - Updated griffe from 1.6.0 to 1.7.2 - Updated identify
+  from 2.6.8 to 2.6.9 - Updated mkdocstrings from 0.28.2 to 0.29.1 - Updated pydantic from 2.10.6 to
+  2.11.3 - Updated virtualenv from 20.29.3 to 20.30.0 - Updated mkdocs-literate-nav from 0.6.1 to
+  0.6.2 - Updated mkdocs-material from 9.6.7 to 9.6.11 - Updated mkdocs-section-index from 0.3.9 to
+  0.3.10 - Updated mkdocstrings-python from 1.16.2 to 1.16.10 - Updated pre-commit from 4.1.0 to
+  4.2.0 - Updated python-dotenv from 1.0.1 to 1.1.0 - Updated setuptools from 75.8.2 to 75.9.1 -
+  Updated types-requests from 2.32.0.20250306 to 2.32.0.20250328
+
+- **deps**: Update dependencies ([#90](https://github.com/TrisNol/rich-jira-release-notes/pull/90),
+  [`2c9a305`](https://github.com/TrisNol/rich-jira-release-notes/commit/2c9a305434cdd33f902c9bc59cdbe8e8b187e06a))
+
+- Updated markdown from 3.7 to 3.8 - Updated packaging from 24.2 to 25.0 - Updated urllib3 from
+  2.3.0 to 2.4.0 - Updated typing-extensions from 4.13.1 to 4.13.2 - Updated beautifulsoup4 from
+  4.13.3 to 4.13.4 - Updated identify from 2.6.9 to 2.6.10 - Updated mkdocs-material from 9.6.11 to
+  9.6.12
+
+### Features
+
+- **cli**: Pass output-dir, template-file and config-file as named parameters rather than argument
+  ([#115](https://github.com/TrisNol/rich-jira-release-notes/pull/115),
+  [`41712bb`](https://github.com/TrisNol/rich-jira-release-notes/commit/41712bb355b024b3a3a9dacd15b8f551b5f75dd3))
+
+Refactors the CLI interface to treat output-dir, template-file, and config-file as named options
+  instead of positional arguments.
+
+- Swapped typer.Argument for typer.Option on output_dir, template_file, and config_file in
+  generate(). - Updated the README’s CLI reference to list the new options and their defaults.
+
+
 ## v0.2.0-rc.2 (2025-04-08)
 
 ### Bug Fixes
