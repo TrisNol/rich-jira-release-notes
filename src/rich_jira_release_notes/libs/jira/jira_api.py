@@ -43,6 +43,7 @@ class JiraField(BaseModel):
 class JiraIssue(BaseModel):
     id: str
     key: str
+    type: str
     fields: dict[str, JiraField]
 
 
@@ -92,7 +93,12 @@ class JiraAPI:
         # Extract desired fields from issues
         result = []
         for issue in data["issues"]:
-            entry = {"id": issue["id"], "key": issue["key"], "fields": {}}
+            entry = {
+                "id": issue["id"],
+                "key": issue["key"],
+                "type": issue["fields"]["issuetype"]["name"],
+                "fields": {},
+            }
             for field_key, field_value in field_maps.items():
                 if (
                     field_value in issue["renderedFields"]

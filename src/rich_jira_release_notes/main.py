@@ -9,7 +9,7 @@ from rich_jira_release_notes.core.generator import generate_release_notes
 
 app = typer.Typer()
 
-__version__ = "0.1.2"
+__version__ = "0.2.0-rc.3"
 
 
 @app.command()
@@ -28,13 +28,11 @@ def generate(
     convert_to_markdown: bool = typer.Option(
         True, help="Convert HTML to Markdown", show_default=True
     ),
-    output_dir: str = typer.Argument(
-        "dist", help="Output directory", show_default=True
-    ),
-    template_file: str = typer.Argument(
+    output_dir: str = typer.Option("dist", help="Output directory", show_default=True),
+    template_file: str = typer.Option(
         "./template.md.jinja", help="Template file to use", show_default=True
     ),
-    config_file: str = typer.Argument(
+    config_file: str = typer.Option(
         None, help="Path to JSON configuration file", show_default=False
     ),
 ):

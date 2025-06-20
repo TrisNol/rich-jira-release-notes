@@ -46,6 +46,7 @@ The CLI provided by this repository is able to do so and serves as a workaround 
     class JiraIssue(BaseModel):
         id: str # Jira internal ticket ID
         key: str # Ticket number (<project>-<number>)
+        type: str # one of: ["Bug", "Story", "Task", "Epic", "Sub-task"]
         fields: dict[str, JiraField] # Ticket fields retrieved
     ```
     A `JiraField` exposes an attribute `value` of different datatypes depending on the `type` of field selected:
@@ -81,7 +82,59 @@ The CLI provided by this repository is able to do so and serves as a workaround 
     Example:
 
     ```
-    rich-jira-release-notes generate 'project = DEV and fixVersion = "4.2.0"' "Summary, Release Notes, Checkboxes"
+    rich-jira-release-notes generate 'project = DEV and fixVersion = "0.0.0"' "Summary, Release Notes, Checkboxes"
     ```
 
 4. Retrieve release notes from the `dist/` directory
+
+## CLI reference
+
+```console
+$ rich-jira-release-notes [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `version`
+* `generate`: Generate release notes
+
+### `rich-jira-release-notes version`
+
+**Usage**:
+
+```console
+$ rich-jira-release-notes version [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+### `rich-jira-release-notes generate`
+
+Generate release notes
+
+**Usage**:
+
+```console
+$ rich-jira-release-notes generate [OPTIONS] JQL_QUERY [FIELDS]
+```
+
+**Arguments**:
+
+* `JQL_QUERY`: JQL query to search for issues  [required]
+* `[FIELDS]`: Comma separated list of fields to include in the release notes  [default: Summary, Release Notes]
+
+**Options**:
+
+* `--convert-to-markdown / --no-convert-to-markdown`: Convert HTML to Markdown  [default: convert-to-markdown]
+* `--output-dir TEXT`: Output directory  [default: dist]
+* `--template-file TEXT`: Template file to use  [default: ./template.md.jinja]
+* `--config-file TEXT`: Path to JSON configuration file
+* `--help`: Show this message and exit.
