@@ -1,6 +1,40 @@
 # CHANGELOG
 
 
+## v0.2.0 (2025-06-20)
+
+### Chores
+
+- Merge branch 'main' into develop [skip ci]
+  ([`a7a530f`](https://github.com/TrisNol/rich-jira-release-notes/commit/a7a530f640509e210eaa38778e160000f529453d))
+
+- Trigger main release
+  ([`633ce8e`](https://github.com/TrisNol/rich-jira-release-notes/commit/633ce8e1cb7f4cb3e2585c05bab159b8a7d4b5b0))
+
+
+## v0.1.2 (2025-01-05)
+
+### Build System
+
+- **deps**: Bump several deps ([#116](https://github.com/TrisNol/rich-jira-release-notes/pull/116),
+  [`9e0cce2`](https://github.com/TrisNol/rich-jira-release-notes/commit/9e0cce27ebb879eb0349374a04d68f7d6e58a3a6))
+
+- Updating platformdirs (4.3.7 -> 4.3.8) - Updating certifi (2025.1.31 -> 2025.6.15) - Updating
+  charset-normalizer (3.4.1 -> 3.4.2) - Updating click (8.1.8 -> 8.2.1) - Updating markdown (3.8 ->
+  3.8.2) - Updating pyyaml-env-tag (0.1 -> 1.1) - Updating urllib3 (2.4.0 -> 2.5.0) - Updating
+  typing-extensions (4.13.2 -> 4.14.0) - Updating mkdocs-autorefs (1.4.1 -> 1.4.2) - Updating
+  pymdown-extensions (10.14.3 -> 10.15) - Updating soupsieve (2.6 -> 2.7) - Updating
+  typing-inspection (0.4.0 -> 0.4.1) - Updating griffe (1.7.2 -> 1.7.3) - Updating identify (2.6.10
+  -> 2.6.12) - Updating pydantic (2.11.5 -> 2.11.7) - Updating python-gitlab (4.13.0 -> 5.6.0) -
+  Updating tomlkit (0.13.2 -> 0.13.3) - Updating virtualenv (20.30.0 -> 20.31.2) - Updating
+  types-requests (2.32.0.20250328 -> 2.32.4.20250611)
+
+### Chores
+
+- Merge 'develop' into 'main' ([#18](https://github.com/TrisNol/rich-jira-release-notes/pull/18),
+  [`8469656`](https://github.com/TrisNol/rich-jira-release-notes/commit/8469656fe9ec3ac516cb084709b157a07c097283))
+
+
 ## v0.2.0-rc.3 (2025-06-20)
 
 ### Build System
@@ -400,12 +434,6 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 - **core**: Export ticket type
   ([`50a376e`](https://github.com/TrisNol/rich-jira-release-notes/commit/50a376e0f0208e9576b11e6098761c2f0682317d))
-## v0.1.2 (2025-01-05)
-
-### Chores
-
-- Merge 'develop' into 'main' ([#18](https://github.com/TrisNol/rich-jira-release-notes/pull/18),
-  [`8469656`](https://github.com/TrisNol/rich-jira-release-notes/commit/8469656fe9ec3ac516cb084709b157a07c097283))
 
 
 ## v0.1.2-rc.1 (2025-01-05)
@@ -472,9 +500,6 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 - Merge 'main' into 'develop' [skip ci]
   ([`1129d42`](https://github.com/TrisNol/rich-jira-release-notes/commit/1129d424adb11bbfc4e547d40c6d2a47eacfe657))
-
-- **release**: V0.1.2-rc.1 [skip ci]
-  ([`1a39811`](https://github.com/TrisNol/rich-jira-release-notes/commit/1a39811cc43f1d8633c3d9f942c7e0c55730e049))
 
 
 ## v0.1.1 (2024-12-18)
