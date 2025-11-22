@@ -12,27 +12,27 @@ version = "0.2.1"
 
 [tool.poetry.dependencies]
 beautifulsoup4 = "^4.14.2"
-jinja2 = "^3.1.5"
+jinja2 = "^3.1.6"
 loguru = "^0.7.3"
-markdownify = "^0.14.1"
-pydantic = "^2.11.5"
+markdownify = "^1.2.2"
+pydantic = "^2.12.4"
 python = "^3.12"
-python-dotenv = "^1.0.1"
-requests = "^2.32.4"
-setuptools = "^78.1.1"
-typer = "^0.19.2"
+python-dotenv = "^1.2.1"
+requests = "^2.32.5"
+setuptools = "^80.9.0"
+typer = "^0.20.0"
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = "^4.3.0"
-python-semantic-release = "^10.3.1"
-types-requests = "^2.32.0.20241016"
+pre-commit = "^4.4.0"
+python-semantic-release = "^10.5.2"
+types-requests = "^2.32.4.20250913"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs-gen-files = "^0.5.0"
-mkdocs-literate-nav = "^0.6.1"
-mkdocs-material = "^9.6.19"
-mkdocs-section-index = "^0.3.9"
-mkdocstrings-python = "^1.17.0"
+mkdocs-literate-nav = "^0.6.2"
+mkdocs-material = "^9.7.0"
+mkdocs-section-index = "^0.3.10"
+mkdocstrings-python = "^1.19.0"
 
 [tool.poetry.scripts]
 rich-jira-release-notes = "rich_jira_release_notes.main:app"
