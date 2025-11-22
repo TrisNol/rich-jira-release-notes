@@ -1,17 +1,14 @@
-FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04
+FROM mcr.microsoft.com/vscode/devcontainers/base:trixie
 
 RUN apt-get update && apt-get install -y curl git && apt-get clean
 
-# Install Docker
-RUN curl -fsSL https://get.docker.com | sh -
-
-# Install Python 3.12
-RUN apt-get update && apt-get -y install software-properties-common && apt-get clean
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt-get update && apt-get -y install python3-launchpadlib python3-pip && apt-get clean
-RUN apt-get update && apt-get -y install python3.12 python3.12-dev python3.12-venv python-is-python3 && apt-get clean
-RUN export PATH="$HOME/.local/bin:$PATH"
-RUN pip install poetry
+RUN apt-get update && apt-get install -y python-is-python3 && apt-get clean
+# Install Poetry
+ENV POETRY_HOME=/opt/poetry
+RUN mkdir -p "$POETRY_HOME" \
+ && curl -sSL https://install.python-poetry.org | POETRY_HOME="$POETRY_HOME" python3 - \
+ && ln -sf "$POETRY_HOME/bin/poetry" /usr/local/bin/poetry
+ENV PATH="$POETRY_HOME/bin:/root/.local/bin:/home/vscode/.local/bin:${PATH}"
 
 # Install Node
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
