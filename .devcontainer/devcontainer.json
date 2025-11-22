@@ -15,12 +15,7 @@
     }
   },
   "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
     "source=${localWorkspaceFolderBasename}-venv,target=${containerWorkspaceFolder}/.venv,type=volume"
   ],
-  "runArgs": [
-    "--privileged",
-    "--network=host",
-    "--add-host=host.docker.internal:host-gateway"
-  ]
+  "postAttachCommand": "poetry completions bash >> ~/.bash_completion && sudo chown -R vscode:vscode .venv"
 }
