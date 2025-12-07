@@ -1,0 +1,2186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Tristan Nolde">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../reference/rich_jira_release_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Changelog - Rich Jira Release Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Rich Jira Release Notes" class="md-header__button md-logo" aria-label="Rich Jira Release Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Rich Jira Release Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TrisNol/rich-jira-release-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Rich Jira Release Notes" class="md-nav__button md-logo" aria-label="Rich Jira Release Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Rich Jira Release Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TrisNol/rich-jira-release-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v021-2025-08-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.1 (2025-08-09)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.1 (2025-08-09)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-2025-06-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0 (2025-06-20)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0 (2025-06-20)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chores_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v012-2025-01-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.2 (2025-01-05)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.2 (2025-01-05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-rc3-2025-06-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0-rc.3 (2025-06-20)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0-rc.3 (2025-06-20)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-rc2-2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0-rc.2 (2025-04-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0-rc.2 (2025-04-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-rc1-2025-02-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0-rc.1 (2025-02-04)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0-rc.1 (2025-02-04)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v012-rc1-2025-01-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.2-rc.1 (2025-01-05)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.2-rc.1 (2025-01-05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v011-2024-12-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.1 (2024-12-18)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.1 (2024-12-18)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v011-rc1-2024-12-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.1-rc.1 (2024-12-17)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.1-rc.1 (2024-12-17)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-2024-12-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.0 (2024-12-17)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0 (2024-12-17)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chores_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-rc1-2024-12-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.0-rc.1 (2024-12-17)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0-rc.1 (2024-12-17)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Code Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/rich_jira_release_notes/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rich_jira_release_notes
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    rich_jira_release_notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/rich_jira_release_notes/core/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    core
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    core
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/rich_jira_release_notes/core/generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/rich_jira_release_notes/libs/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    libs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    libs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/rich_jira_release_notes/libs/jira/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    jira
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1_2_1" id="__nav_3_1_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    jira
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/rich_jira_release_notes/libs/jira/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/rich_jira_release_notes/libs/jira/jira_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    jira_api
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/rich_jira_release_notes/main/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    main
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LICENSE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v021-2025-08-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.1 (2025-08-09)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.1 (2025-08-09)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-2025-06-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0 (2025-06-20)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0 (2025-06-20)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chores_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v012-2025-01-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.2 (2025-01-05)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.2 (2025-01-05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-rc3-2025-06-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0-rc.3 (2025-06-20)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0-rc.3 (2025-06-20)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-rc2-2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0-rc.2 (2025-04-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0-rc.2 (2025-04-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-rc1-2025-02-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.2.0-rc.1 (2025-02-04)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.2.0-rc.1 (2025-02-04)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v012-rc1-2025-01-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.2-rc.1 (2025-01-05)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.2-rc.1 (2025-01-05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v011-2024-12-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.1 (2024-12-18)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.1 (2024-12-18)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-system_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v011-rc1-2024-12-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.1-rc.1 (2024-12-17)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.1-rc.1 (2024-12-17)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chores_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-2024-12-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.0 (2024-12-17)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0 (2024-12-17)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chores_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-rc1-2024-12-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.0-rc.1 (2024-12-17)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0-rc.1 (2024-12-17)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-system_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="changelog">CHANGELOG</h1>
+<h2 id="v021-2025-08-09">v0.2.1 (2025-08-09)</h2>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li><strong>deps</strong>: Resolve vulnerability
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/ddaa66582c405b541709f00718f30897dd145e41"><code>ddaa665</code></a>)</li>
+</ul>
+<h3 id="build-system">Build System</h3>
+<ul>
+<li><strong>deps</strong>: Bump dependencies (#128)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/128">#128</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/92cc86b2f7b2c57f647acc16fe9c68bb54becbc3"><code>92cc86b</code></a>)</li>
+</ul>
+<h3 id="chores">Chores</h3>
+<ul>
+<li>Sync. branches #119 [skip ci]
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/14ad0fb0a7478f5d6fc31fafabd3227fa998ef0f"><code>14ad0fb</code></a>)</li>
+</ul>
+<h2 id="v020-2025-06-20">v0.2.0 (2025-06-20)</h2>
+<h3 id="chores_1">Chores</h3>
+<ul>
+<li>
+<p>Merge branch 'main' into develop [skip ci]
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/a7a530f640509e210eaa38778e160000f529453d"><code>a7a530f</code></a>)</p>
+</li>
+<li>
+<p>Trigger main release
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/633ce8e1cb7f4cb3e2585c05bab159b8a7d4b5b0"><code>633ce8e</code></a>)</p>
+</li>
+</ul>
+<h2 id="v012-2025-01-05">v0.1.2 (2025-01-05)</h2>
+<h3 id="build-system_1">Build System</h3>
+<ul>
+<li><strong>deps</strong>: Bump several deps (#116)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/116">#116</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/9e0cce27ebb879eb0349374a04d68f7d6e58a3a6"><code>9e0cce2</code></a>)</li>
+</ul>
+<h3 id="chores_2">Chores</h3>
+<ul>
+<li>Merge 'develop' into 'main' (#18)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/18">#18</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/8469656fe9ec3ac516cb084709b157a07c097283"><code>8469656</code></a>)</li>
+</ul>
+<h2 id="v020-rc3-2025-06-20">v0.2.0-rc.3 (2025-06-20)</h2>
+<h3 id="build-system_2">Build System</h3>
+<ul>
+<li>
+<p><strong>deps</strong>: Bump pydantic from 2.11.3 to 2.11.5 (#101)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/101">#101</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/9a5eff61ad74328babe733a3c124cd4327f127b9"><code>9a5eff6</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump requests from 2.32.3 to 2.32.4 (#108)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/108">#108</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/e8cdbb0bb1f5317300556883d8fc560d656fc1b2"><code>e8cdbb0</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump typer from 0.15.2 to 0.16.0 (#105)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/105">#105</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/74f6620fe03f79827eb96676b92e0efe71f9413b"><code>74f6620</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocs-material from 9.6.12 to 9.6.14 (#97)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/97">#97</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/d6408481818f93c4bb155389256298e7f2306bfb"><code>d640848</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocstrings-python from 1.16.10 to 1.16.12 (#107)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/107">#107</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/3b51e82e9bef504f76a761d2bfc352e58b7c51ef"><code>3b51e82</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump python-semantic-release from 9.21.0 to 9.21.1 (#95)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/95">#95</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/fca36974b50019e20b610ae440fcbd1697062dbb"><code>fca3697</code></a>)</p>
+</li>
+</ul>
+<h3 id="chores_3">Chores</h3>
+<ul>
+<li>
+<p><strong>deps</strong>: Bump deps (#87) (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/87">#87</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/fdb0c29582e8645daf1748136160589a8b1ac024"><code>fdb0c29</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Update dependencies (#90)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/90">#90</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/2c9a305434cdd33f902c9bc59cdbe8e8b187e06a"><code>2c9a305</code></a>)</p>
+</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>cli</strong>: Pass output-dir, template-file and config-file as named parameters rather than argument
+  (#115) (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/115">#115</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/41712bb355b024b3a3a9dacd15b8f551b5f75dd3"><code>41712bb</code></a>)</li>
+</ul>
+<h2 id="v020-rc2-2025-04-08">v0.2.0-rc.2 (2025-04-08)</h2>
+<h3 id="bug-fixes_1">Bug Fixes</h3>
+<ul>
+<li><strong>core</strong>: Resolve some minor issues
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/5cf1c4005e694ab0868da58788fc2c8b8d5af23b"><code>5cf1c40</code></a>)</li>
+</ul>
+<h3 id="build-system_3">Build System</h3>
+<ul>
+<li>
+<p><strong>deps</strong>: Bump dependencies
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/697fb7f2f8b1cbf52834ae4e986b9976ba331eb5"><code>697fb7f</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump python-semantic-release/publish-action (#46)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/46">#46</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/7e39aa50e139c681f1a11f6f094240097185b271"><code>7e39aa5</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump python-semantic-release/publish-action (#59)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/59">#59</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/d72be12ee64f772e2a1a4c82cf901a6e6dd14289"><code>d72be12</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump python-semantic-release/python-semantic-release (#47)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/47">#47</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/6fd41039d3c77fa8c24b6cd8bbf92e3facec7575"><code>6fd4103</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump python-semantic-release/python-semantic-release (#58)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/58">#58</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/6eb82d1f951f094df91c764ceb9c056e388e6cb2"><code>6eb82d1</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocs-material from 9.6.3 to 9.6.4 (#50)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/50">#50</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/c9fdba3450a7293b938a85674ff791bb75fe6e50"><code>c9fdba3</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocstrings-python from 1.14.6 to 1.15.0 (#49)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/49">#49</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/e9b4a06cd41ec3dfede449476b79b78c33dc1b23"><code>e9b4a06</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump python-semantic-release from 9.18.1 to 9.19.1 (#48)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/48">#48</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/deae3cf9ac970adcbb8ac9d810323be03d03113d"><code>deae3cf</code></a>)</p>
+</li>
+</ul>
+<h3 id="chores_4">Chores</h3>
+<ul>
+<li><strong>deps</strong>: Bump dependencies (#42)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/42">#42</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/b6d1fd5e5736f19fd499f59800a84f2c171a05ac"><code>b6d1fd5</code></a>)</li>
+</ul>
+<h2 id="v020-rc1-2025-02-04">v0.2.0-rc.1 (2025-02-04)</h2>
+<h3 id="build-system_4">Build System</h3>
+<ul>
+<li>
+<p><strong>deps</strong>: Bump pydantic from 2.10.4 to 2.10.6 (#27)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/27">#27</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/cde1afbb453ea5a3c7819ad049c45dfeb86a15fd"><code>cde1afb</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump python-semantic-release/publish-action (#23)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/23">#23</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/a34848eae59a8a92e13b597b48d1e28f9512a8f1"><code>a34848e</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump python-semantic-release/python-semantic-release (#24)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/24">#24</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/b42900d584319d98dac9d55ef321015c31469434"><code>b42900d</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocs-material from 9.5.49 to 9.5.50 (#25)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/25">#25</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/5c6077709711871db7eb751e45b023af572a454a"><code>5c60777</code></a>)</p>
+</li>
+</ul>
+<h3 id="features_1">Features</h3>
+<ul>
+<li><strong>core</strong>: Export ticket type
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/50a376e0f0208e9576b11e6098761c2f0682317d"><code>50a376e</code></a>)</li>
+</ul>
+<h2 id="v012-rc1-2025-01-05">v0.1.2-rc.1 (2025-01-05)</h2>
+<h3 id="bug-fixes_2">Bug Fixes</h3>
+<ul>
+<li><strong>libs</strong>: Enable handling of checkbox fields
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/7e7993561f42467d17b7623f45874a030f6f0ce3"><code>7e79935</code></a>)</li>
+</ul>
+<h3 id="build-system_5">Build System</h3>
+<ul>
+<li>
+<p><strong>deps</strong>: Bump jinja2 from 3.1.4 to 3.1.5 (#14)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/14">#14</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/37eac316c607900729dc945a4b399af14934f7de"><code>37eac31</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump pydantic from 2.10.3 to 2.10.4 (#12)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/12">#12</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/2f9ddfa134440a83764b81bba62bd4079d805946"><code>2f9ddfa</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocstrings-python from 1.12.2 to 1.13.0 (#16)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/16">#16</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/b656dbec42d7e6bfb13bd2745c33f6de0589f8c2"><code>b656dbe</code></a>)</p>
+</li>
+</ul>
+<h3 id="chores_5">Chores</h3>
+<ul>
+<li>Merge 'main' into 'develop' [skip ci]
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/1129d424adb11bbfc4e547d40c6d2a47eacfe657"><code>1129d42</code></a>)</li>
+</ul>
+<h2 id="v011-2024-12-18">v0.1.1 (2024-12-18)</h2>
+<h3 id="build-system_6">Build System</h3>
+<ul>
+<li>
+<p><strong>deps</strong>: Bump actions/checkout from 3 to 4 (#9)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/9">#9</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/30cd346b251b6f67cdad0fd813c522f4b39bfcf7"><code>30cd346</code></a>)</p>
+</li>
+<li>
+<p><strong>deps</strong>: Bump actions/setup-python from 4 to 5 (#8)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/8">#8</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/76585f4e32bf5f0639a9592ce1c3ddb65a0b9891"><code>76585f4</code></a>)</p>
+</li>
+<li>
+<p><strong>deps-dev</strong>: Bump mkdocs-material from 9.5.48 to 9.5.49 (#10)
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/10">#10</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/c667b64d0713383029b9be88e38a605171e77ffd"><code>c667b64</code></a>)</p>
+</li>
+</ul>
+<h3 id="chores_6">Chores</h3>
+<ul>
+<li>Merge 'develop' into 'main'
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/faf31aabe7eb5799d2658139a3973b487e3ed36a"><code>faf31aa</code></a>)</li>
+</ul>
+<h2 id="v011-rc1-2024-12-17">v0.1.1-rc.1 (2024-12-17)</h2>
+<h3 id="bug-fixes_3">Bug Fixes</h3>
+<ul>
+<li><strong>docs</strong>: Resolve MkDocs issue
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/2c1232f8d6f72a1650335d1c601e875f132280d2"><code>2c1232f</code></a>)</li>
+</ul>
+<h3 id="build-system_7">Build System</h3>
+<ul>
+<li>Configure remote token for python-semantic-release
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/622e60cf13578e8815e015eeb1685f704385a097"><code>622e60c</code></a>)</li>
+</ul>
+<h3 id="chores_7">Chores</h3>
+<ul>
+<li>Merge branch 'main' into develop
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/3f12a5bac02eb44157cd3d753afa305a7eebdaf7"><code>3f12a5b</code></a>)</li>
+</ul>
+<h2 id="v010-2024-12-17">v0.1.0 (2024-12-17)</h2>
+<h3 id="chores_8">Chores</h3>
+<ul>
+<li>Merge 'develop' into 'main' #7
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/b3b8d52fa67c06f8eb6eb345eecb469dbdcb6fb5"><code>b3b8d52</code></a>)</li>
+</ul>
+<h2 id="v010-rc1-2024-12-17">v0.1.0-rc.1 (2024-12-17)</h2>
+<h3 id="bug-fixes_4">Bug Fixes</h3>
+<ul>
+<li>
+<p><strong>core</strong>: Falsy import
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/8f2221a5978e09ea7450860952bc296a00e20e46"><code>8f2221a</code></a>)</p>
+</li>
+<li>
+<p><strong>docs</strong>: Remove leftovers
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/1b167bcef8638ff5680234ee1f6a7f5508ff2298"><code>1b167bc</code></a>)</p>
+</li>
+</ul>
+<h3 id="build-system_8">Build System</h3>
+<ul>
+<li>
+<p>Add DevContainer config (#1) (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/1">#1</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/238665dc2d2bed455ee38d7006b08495aacdcbbb"><code>238665d</code></a>)</p>
+</li>
+<li>
+<p>Fetch entire repo history in release pipeline
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/1f048f7f528006638b094fba86a05071cc46c983"><code>1f048f7</code></a>)</p>
+</li>
+<li>
+<p>Give pipeline id-token permission
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/8c60510d3bfa09b202d74a463d47008204ab1955"><code>8c60510</code></a>)</p>
+</li>
+<li>
+<p>Give release pipeline write permissions
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/0ab7065be06b94aebda77c6b29ed9e501844ac6d"><code>0ab7065</code></a>)</p>
+</li>
+<li>
+<p>Init app (#2) (<a href="https://github.com/TrisNol/rich-jira-release-notes/pull/2">#2</a>,
+  <a href="https://github.com/TrisNol/rich-jira-release-notes/commit/e2bb5795fef47d4ece28f2569c2600ec02c68eb5"><code>e2bb579</code></a>)</p>
+</li>
+<li>
+<p>Integrate python-semantic-release #6
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/7677b9c2de14c72ee201fd0f7e21c0f4109e6e30"><code>7677b9c</code></a>)</p>
+</li>
+<li>
+<p>Remove repo_dir from semantic_release config
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/b2a2114a7b50303cfa0796e16edb0270f6360074"><code>b2a2114</code></a>)</p>
+</li>
+<li>
+<p>Resolve branch trigger typo
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/2c671a9f65c2ecf8a0c24e58684726243c1c3c49"><code>2c671a9</code></a>)</p>
+</li>
+<li>
+<p>Resolve python-semantic-release issue
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/8e385e225c193f75152478a7b9d883663562dc25"><code>8e385e2</code></a>)</p>
+</li>
+<li>
+<p><strong>docs</strong>: MkDocs integration incl. GH workflow
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/ba95c1e94cc4f62f4423bd67b7b866ac5abf8c4d"><code>ba95c1e</code></a>)</p>
+</li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li>Extend docs
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/87dabeef39024949477225a1327be4aa8d10455a"><code>87dabee</code></a>)</li>
+</ul>
+<h3 id="features_2">Features</h3>
+<ul>
+<li><strong>core</strong>: Provide main function
+  (<a href="https://github.com/TrisNol/rich-jira-release-notes/commit/d22c458a4551295772831eec0966018d784ad997"><code>d22c458</code></a>)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
