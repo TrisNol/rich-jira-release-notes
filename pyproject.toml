@@ -11,26 +11,26 @@ readme = "./docs/README.md"
 version = "0.2.1"
 
 [tool.poetry.dependencies]
-beautifulsoup4 = "^4.14.2"
+beautifulsoup4 = "^4.14.3"
 jinja2 = "^3.1.6"
 loguru = "^0.7.3"
 markdownify = "^1.2.2"
-pydantic = "^2.12.4"
+pydantic = "^2.12.5"
 python = "^3.12"
 python-dotenv = "^1.2.1"
 requests = "^2.32.5"
-setuptools = "^80.9.0"
-typer = "^0.20.0"
+setuptools = "^80.10.2"
+typer = "^0.23.1"
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = "^4.4.0"
-python-semantic-release = "^10.5.2"
-types-requests = "^2.32.4.20250913"
+pre-commit = "^4.5.1"
+python-semantic-release = "^10.5.3"
+types-requests = "^2.32.4.20260107"
 
 [tool.poetry.group.docs.dependencies]
-mkdocs-gen-files = "^0.5.0"
+mkdocs-gen-files = "^0.6.0"
 mkdocs-literate-nav = "^0.6.2"
-mkdocs-material = "^9.7.0"
+mkdocs-material = "^9.7.3"
 mkdocs-section-index = "^0.3.10"
 mkdocstrings-python = "^1.19.0"
 
