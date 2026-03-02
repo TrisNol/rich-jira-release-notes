@@ -131,10 +131,9 @@ class JiraAPI:
         """Get attachment specified by id utilizing https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments#api-group-issue-attachments
 
         Args:
-            id (str): ID of attachment
-            output_dir (str): Output directory to save attachment to
+            url (str): URL of attachment
+            output_path (str): Output path to save attachment to
         """
-        url = f"{self.base_url}{url}"
         auth = HTTPBasicAuth(self.credentials.username, self.credentials.token)
 
         headers = {"Accept": "application/json"}
