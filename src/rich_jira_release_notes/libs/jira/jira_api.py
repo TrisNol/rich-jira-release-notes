@@ -128,7 +128,7 @@ class JiraAPI:
         return [JiraIssue(**issue) for issue in result]
 
     def download_attachment(self, url: str, output_path: str) -> None:
-        """Get attachment specified by id utilizing https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments#api-group-issue-attachments
+        """Download an attachment from Jira using its URL utilizing https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments#api-group-issue-attachments
 
         Args:
             url (str): URL of attachment
