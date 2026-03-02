@@ -1,6 +1,154 @@
 # CHANGELOG
 
 
+## v0.2.2-rc.1 (2026-03-02)
+
+### Bug Fixes
+
+- Resolve issue in attachment download (#207)
+  ([#207](https://github.com/TrisNol/rich-jira-release-notes/pull/207),
+  [`730480f`](https://github.com/TrisNol/rich-jira-release-notes/commit/730480ffd2ad7c6a542632eca78cfc2cfb44d57b))
+
+### Build System
+
+- **deps**: Bump actions/checkout from 4 to 5 (#131)
+  ([#131](https://github.com/TrisNol/rich-jira-release-notes/pull/131),
+  [`746f6a2`](https://github.com/TrisNol/rich-jira-release-notes/commit/746f6a216c2c141aeb6b4c1b26028ef9b783fccc))
+
+- **deps**: Bump actions/checkout from 4 to 5 (#131)
+  ([#131](https://github.com/TrisNol/rich-jira-release-notes/pull/131),
+  [`e8dabe0`](https://github.com/TrisNol/rich-jira-release-notes/commit/e8dabe0a1375524761b9a76beab214336d34ac8f))
+
+- **deps**: Bump actions/checkout from 5 to 6 (#174)
+  ([#174](https://github.com/TrisNol/rich-jira-release-notes/pull/174),
+  [`ee7fa55`](https://github.com/TrisNol/rich-jira-release-notes/commit/ee7fa552df82054dd90b71d3cb03dd4c4a80f047))
+
+- **deps**: Bump actions/checkout from 5 to 6 (#174)
+  ([#174](https://github.com/TrisNol/rich-jira-release-notes/pull/174),
+  [`b97b6dc`](https://github.com/TrisNol/rich-jira-release-notes/commit/b97b6dc0d13dceff83f1d6d80158abb122c61427))
+
+- **deps**: Bump actions/setup-python from 5 to 6 (#141)
+  ([#141](https://github.com/TrisNol/rich-jira-release-notes/pull/141),
+  [`f8fd0b4`](https://github.com/TrisNol/rich-jira-release-notes/commit/f8fd0b4e5e33732005bb178be69d0a654c29f9a6))
+
+- **deps**: Bump actions/setup-python from 5 to 6 (#141)
+  ([#141](https://github.com/TrisNol/rich-jira-release-notes/pull/141),
+  [`137cb86`](https://github.com/TrisNol/rich-jira-release-notes/commit/137cb860e9654216c5a124a57187b5a5e9c12318))
+
+- **deps**: Bump beautifulsoup4 from 4.13.4 to 4.14.2 (#156)
+  ([#156](https://github.com/TrisNol/rich-jira-release-notes/pull/156),
+  [`f42ca3e`](https://github.com/TrisNol/rich-jira-release-notes/commit/f42ca3ec60a2fc17aed8d14892e6d1038ea049fd))
+
+- **deps**: Bump beautifulsoup4 from 4.13.4 to 4.14.2 (#156)
+  ([#156](https://github.com/TrisNol/rich-jira-release-notes/pull/156),
+  [`d91c43b`](https://github.com/TrisNol/rich-jira-release-notes/commit/d91c43bb85cf545a4c642b3eb3eb76dd74eaae54))
+
+- **deps**: Bump dependencies (#205)
+  ([#205](https://github.com/TrisNol/rich-jira-release-notes/pull/205),
+  [`3af82e3`](https://github.com/TrisNol/rich-jira-release-notes/commit/3af82e3a1644523e63f1a3096228cd409fc553bb))
+
+- **deps**: Bump python-semantic-release/publish-action (#172)
+  ([#172](https://github.com/TrisNol/rich-jira-release-notes/pull/172),
+  [`b501716`](https://github.com/TrisNol/rich-jira-release-notes/commit/b501716045db4e4a4c6e6d02502a9b4ee2ab1582))
+
+- **deps**: Bump python-semantic-release/publish-action (#172)
+  ([#172](https://github.com/TrisNol/rich-jira-release-notes/pull/172),
+  [`73b4037`](https://github.com/TrisNol/rich-jira-release-notes/commit/73b4037885dd46a2aaf985f61ef78d1245f63b41))
+
+- **deps**: Bump python-semantic-release/python-semantic-release (#173)
+  ([#173](https://github.com/TrisNol/rich-jira-release-notes/pull/173),
+  [`d7913f6`](https://github.com/TrisNol/rich-jira-release-notes/commit/d7913f624a12c1f7605540d9635da2913c83135b))
+
+- **deps**: Bump python-semantic-release/python-semantic-release (#173)
+  ([#173](https://github.com/TrisNol/rich-jira-release-notes/pull/173),
+  [`796b761`](https://github.com/TrisNol/rich-jira-release-notes/commit/796b7617c8daff0ac73efc3fb071bac20999bdf0))
+
+- **deps**: Bump setuptools from 75.6.0 to 78.1.1 (#100)
+  ([#100](https://github.com/TrisNol/rich-jira-release-notes/pull/100),
+  [`2644247`](https://github.com/TrisNol/rich-jira-release-notes/commit/26442476ab29473c2051b0a8b99881b324430c15))
+
+- **deps**: Bump typer from 0.16.0 to 0.17.4 (#144)
+  ([#144](https://github.com/TrisNol/rich-jira-release-notes/pull/144),
+  [`095e2d3`](https://github.com/TrisNol/rich-jira-release-notes/commit/095e2d3a1956a9e61220945cd3360acbef1e3b9e))
+
+- **deps**: Bump typer from 0.16.0 to 0.17.4 (#144)
+  ([#144](https://github.com/TrisNol/rich-jira-release-notes/pull/144),
+  [`4b64f03`](https://github.com/TrisNol/rich-jira-release-notes/commit/4b64f037aee261b264107430747201ee910a50c6))
+
+- **deps**: Bump typer from 0.17.4 to 0.19.1 (#153)
+  ([#153](https://github.com/TrisNol/rich-jira-release-notes/pull/153),
+  [`5bfb1d1`](https://github.com/TrisNol/rich-jira-release-notes/commit/5bfb1d12298d85ceab63d6aa7aafdcdd1aa3cc6e))
+
+- **deps**: Bump typer from 0.17.4 to 0.19.1 (#153)
+  ([#153](https://github.com/TrisNol/rich-jira-release-notes/pull/153),
+  [`b05a394`](https://github.com/TrisNol/rich-jira-release-notes/commit/b05a394e471c352d7c2ffacbb3d27c7ac9260cde))
+
+- **deps**: Bump typer from 0.19.1 to 0.19.2 (#154)
+  ([#154](https://github.com/TrisNol/rich-jira-release-notes/pull/154),
+  [`90f3402`](https://github.com/TrisNol/rich-jira-release-notes/commit/90f34024c51b884a1ed8691fa57f547e63009d2a))
+
+- **deps**: Bump typer from 0.19.1 to 0.19.2 (#154)
+  ([#154](https://github.com/TrisNol/rich-jira-release-notes/pull/154),
+  [`3543643`](https://github.com/TrisNol/rich-jira-release-notes/commit/35436435e13a44d1835d7b5877f1d1ba3625942f))
+
+- **deps**: Bump urllib3 from 2.5.0 to 2.6.0 to patch CVE-2025-66418 (#184)
+  ([#184](https://github.com/TrisNol/rich-jira-release-notes/pull/184),
+  [`9c75ddb`](https://github.com/TrisNol/rich-jira-release-notes/commit/9c75ddbcb2771d82660ce0ed13f2c349ec8ee220))
+
+- **deps-dev**: Bump mkdocs-material from 9.6.16 to 9.6.19 (#142)
+  ([#142](https://github.com/TrisNol/rich-jira-release-notes/pull/142),
+  [`8fe2d2b`](https://github.com/TrisNol/rich-jira-release-notes/commit/8fe2d2b8de2943ffa540e867798cc62b3ccf9387))
+
+- **deps-dev**: Bump mkdocs-material from 9.6.16 to 9.6.19 (#142)
+  ([#142](https://github.com/TrisNol/rich-jira-release-notes/pull/142),
+  [`f55be75`](https://github.com/TrisNol/rich-jira-release-notes/commit/f55be75e472602a383ad9ee26ed4b9c7f19916e1))
+
+- **deps-dev**: Bump mkdocstrings-python from 1.16.12 to 1.17.0 (#132)
+  ([#132](https://github.com/TrisNol/rich-jira-release-notes/pull/132),
+  [`dcd0410`](https://github.com/TrisNol/rich-jira-release-notes/commit/dcd0410b44c504a4ba2f0382d9a27e5adedc373a))
+
+- **deps-dev**: Bump mkdocstrings-python from 1.16.12 to 1.17.0 (#132)
+  ([#132](https://github.com/TrisNol/rich-jira-release-notes/pull/132),
+  [`ab9a031`](https://github.com/TrisNol/rich-jira-release-notes/commit/ab9a031a469981639b7fa699147410cb76cde7c9))
+
+- **deps-dev**: Bump pre-commit from 4.2.0 to 4.3.0 (#130)
+  ([#130](https://github.com/TrisNol/rich-jira-release-notes/pull/130),
+  [`5966fbf`](https://github.com/TrisNol/rich-jira-release-notes/commit/5966fbf2748ddc18bda747cb390555368edd61db))
+
+- **deps-dev**: Bump pre-commit from 4.2.0 to 4.3.0 (#130)
+  ([#130](https://github.com/TrisNol/rich-jira-release-notes/pull/130),
+  [`df293ea`](https://github.com/TrisNol/rich-jira-release-notes/commit/df293ea1f6fce4855aa968dc18986dea7d9f5e95))
+
+- **devcontainer**: Upgrade config (#175)
+  ([#175](https://github.com/TrisNol/rich-jira-release-notes/pull/175),
+  [`6586dee`](https://github.com/TrisNol/rich-jira-release-notes/commit/6586dee60ea4575fd309d385a54e800c8aebd8fa))
+
+- **devcontainer**: Upgrade config (#175)
+  ([#175](https://github.com/TrisNol/rich-jira-release-notes/pull/175),
+  [`076a288`](https://github.com/TrisNol/rich-jira-release-notes/commit/076a288e38ffc27010eff2a01a18a5e191c96519))
+
+### Chores
+
+- Merge branch 'main' into develop [skip ci]
+  ([`536ba17`](https://github.com/TrisNol/rich-jira-release-notes/commit/536ba176e28a652a8c7bf441a4f17e8db708e362))
+
+- **deps**: Bump deps (#176) ([#176](https://github.com/TrisNol/rich-jira-release-notes/pull/176),
+  [`4fa5eed`](https://github.com/TrisNol/rich-jira-release-notes/commit/4fa5eedbfcef895b7aecd48b884799fa6abe2f96))
+
+- **deps**: Bump deps (#176) ([#176](https://github.com/TrisNol/rich-jira-release-notes/pull/176),
+  [`631b329`](https://github.com/TrisNol/rich-jira-release-notes/commit/631b3299cf4c3ba38f383105270903588e396367))
+
+### Continuous Integration
+
+- Ensure semantic-release triggers docs pipeline (#178)
+  ([#178](https://github.com/TrisNol/rich-jira-release-notes/pull/178),
+  [`3d23b67`](https://github.com/TrisNol/rich-jira-release-notes/commit/3d23b67da0a73c1135c5deefc2750b08dc01a74b))
+
+- Ensure semantic-release triggers docs pipeline (#178)
+  ([#178](https://github.com/TrisNol/rich-jira-release-notes/pull/178),
+  [`18663ea`](https://github.com/TrisNol/rich-jira-release-notes/commit/18663ea24a8ae6df12edcd1874e765932172a79e))
+
+
 ## v0.2.1 (2025-08-09)
 
 ### Bug Fixes
