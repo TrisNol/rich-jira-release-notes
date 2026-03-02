@@ -8,7 +8,7 @@ from rich_jira_release_notes.core.generator import generate_release_notes
 
 app = typer.Typer()
 
-__version__ = "0.2.2-rc.1"
+__version__ = "0.2.2"
 
 
 @app.command()
