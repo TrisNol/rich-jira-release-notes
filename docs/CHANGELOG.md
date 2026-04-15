@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## v0.2.2-rc.2 (2026-04-15)
+
+### Bug Fixes
+
+- **core**: Resolve issues related to deprecated Jira v2 API (#221)
+  ([#221](https://github.com/TrisNol/rich-jira-release-notes/pull/221),
+  [`cbcb7aa`](https://github.com/TrisNol/rich-jira-release-notes/commit/cbcb7aa963eb377f8c553f7afb45ef71184002d6))
+
+### Chores
+
+- **deps**: Bump deps (#211) ([#211](https://github.com/TrisNol/rich-jira-release-notes/pull/211),
+  [`e72203d`](https://github.com/TrisNol/rich-jira-release-notes/commit/e72203d42b44f78680df6b159350dcb9300f5690))
+
+
 ## v0.2.2-rc.1 (2026-03-02)
 
 ### Bug Fixes
