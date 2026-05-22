@@ -1,6 +1,36 @@
 # CHANGELOG
 
 
+## v0.2.3-rc.1 (2026-05-22)
+
+### Chores
+
+- Merge branch 'main' into develop
+  ([`3236571`](https://github.com/TrisNol/rich-jira-release-notes/commit/32365719c0064fcbb3accabc6cedd3f077bd167a))
+
+
+## v0.2.2 (2026-03-02)
+
+### Build System
+
+- **deps**: Bump dependencies (#241)
+  ([#241](https://github.com/TrisNol/rich-jira-release-notes/pull/241),
+  [`9438ea2`](https://github.com/TrisNol/rich-jira-release-notes/commit/9438ea266d0f1dcd0a925c2ceacefc60260e0143))
+
+- **deps**: Bump requests from 2.33.1 to 2.34.0 (#234)
+  ([#234](https://github.com/TrisNol/rich-jira-release-notes/pull/234),
+  [`abe0473`](https://github.com/TrisNol/rich-jira-release-notes/commit/abe04734a8d152b58b2d93cb3537d39dc085098e))
+
+- **deps-dev**: Bump types-requests (#235)
+  ([#235](https://github.com/TrisNol/rich-jira-release-notes/pull/235),
+  [`8387b87`](https://github.com/TrisNol/rich-jira-release-notes/commit/8387b877b6354acc0cfbaf39a8d97120e4957207))
+
+### Chores
+
+- Merge pull request #208 from TrisNol/develop
+  ([`82d411a`](https://github.com/TrisNol/rich-jira-release-notes/commit/82d411aa90333c283826079add6a6de17b8c68a0))
+
+
 ## v0.2.2-rc.2 (2026-04-15)
 
 ### Bug Fixes
@@ -13,12 +43,6 @@
 
 - **deps**: Bump deps (#211) ([#211](https://github.com/TrisNol/rich-jira-release-notes/pull/211),
   [`e72203d`](https://github.com/TrisNol/rich-jira-release-notes/commit/e72203d42b44f78680df6b159350dcb9300f5690))
-## v0.2.2 (2026-03-02)
-
-### Chores
-
-- Merge pull request #208 from TrisNol/develop
-  ([`82d411a`](https://github.com/TrisNol/rich-jira-release-notes/commit/82d411aa90333c283826079add6a6de17b8c68a0))
 
 
 ## v0.2.2-rc.1 (2026-03-02)
