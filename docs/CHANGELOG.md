@@ -13,6 +13,12 @@
 
 - **deps**: Bump deps (#211) ([#211](https://github.com/TrisNol/rich-jira-release-notes/pull/211),
   [`e72203d`](https://github.com/TrisNol/rich-jira-release-notes/commit/e72203d42b44f78680df6b159350dcb9300f5690))
+## v0.2.2 (2026-03-02)
+
+### Chores
+
+- Merge pull request #208 from TrisNol/develop
+  ([`82d411a`](https://github.com/TrisNol/rich-jira-release-notes/commit/82d411aa90333c283826079add6a6de17b8c68a0))
 
 
 ## v0.2.2-rc.1 (2026-03-02)
