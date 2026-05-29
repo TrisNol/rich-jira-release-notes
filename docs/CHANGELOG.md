@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.2.3 (2026-05-22)
+
+### Chores
+
+- Sync develop to main #242
+  ([`f49a3ea`](https://github.com/TrisNol/rich-jira-release-notes/commit/f49a3ea48a240b862a849d369381334cc454ac3f))
+
+
 ## v0.2.3-rc.1 (2026-05-22)
 
 ### Chores
