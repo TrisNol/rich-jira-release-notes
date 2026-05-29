@@ -20,11 +20,12 @@ python = "^3.12"
 python-dotenv = "^1.2.2"
 requests = "^2.34.2"
 setuptools = "^80.10.2"
-typer = "^0.23.1"
+typer = "0.26.3"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.6.0"
 python-semantic-release = "^10.5.3"
+safety = "*"
 types-requests = "2.33.0.20260518"
 
 [tool.poetry.group.docs.dependencies]
