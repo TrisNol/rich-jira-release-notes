@@ -20,13 +20,13 @@ python = "^3.12"
 python-dotenv = "^1.2.2"
 requests = "^2.34.2"
 setuptools = "^83.0.0"
-typer = "0.26.3"
+typer = "0.27.1"
 
 [tool.poetry.group.dev.dependencies]
 pip-audit = "^2.10.1"
 pre-commit = "^4.6.0"
 python-semantic-release = "^10.6.1"
-types-requests = "2.33.0.20260518"
+types-requests = "2.33.0.20260712"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs-gen-files = "^0.6.0"
