@@ -19,13 +19,13 @@ pydantic = "^2.13.4"
 python = "^3.12"
 python-dotenv = "^1.2.2"
 requests = "^2.34.2"
-setuptools = "^80.10.2"
+setuptools = "^83.0.0"
 typer = "0.26.3"
 
 [tool.poetry.group.dev.dependencies]
+pip-audit = "^2.10.1"
 pre-commit = "^4.6.0"
-python-semantic-release = "^10.5.3"
-safety = "*"
+python-semantic-release = "^10.6.1"
 types-requests = "2.33.0.20260518"
 
 [tool.poetry.group.docs.dependencies]
@@ -34,6 +34,7 @@ mkdocs-literate-nav = "^0.6.2"
 mkdocs-material = "^9.7.5"
 mkdocs-section-index = "^0.3.12"
 mkdocstrings-python = "^1.19.0"
+pymdown-extensions = "^11.0.1"
 
 [tool.poetry.scripts]
 rich-jira-release-notes = "rich_jira_release_notes.main:app"
