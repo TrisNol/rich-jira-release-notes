@@ -20,7 +20,7 @@ python = "^3.12"
 python-dotenv = "^1.2.2"
 requests = "^2.34.2"
 setuptools = "^83.0.0"
-typer = "0.27.1"
+typer = "0.27.2"
 
 [tool.poetry.group.dev.dependencies]
 pip-audit = "^2.10.1"
