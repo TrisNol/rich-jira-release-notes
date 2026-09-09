@@ -26,7 +26,7 @@ typer = "0.27.1"
 pip-audit = "^2.10.1"
 pre-commit = "^4.6.0"
 python-semantic-release = "^10.6.1"
-types-requests = "2.33.0.20260712"
+types-requests = "2.33.0.20260906"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs-gen-files = "^0.6.0"
