@@ -143,50 +143,75 @@ class JiraAPI:
             "expand": "renderedFields,names",
         }
 
-        response = requests.request(
-            "GET", url, headers=headers, params=query, auth=auth
-        )
-        response.raise_for_status()
-
-        data = json.loads(response.text)
-
-        # Resolve Jira internal field names to clear text representation of desired fields
-        field_maps = self._resolve_field_maps(data, fields, headers, auth)
-
-        # Extract desired fields from issues
         result = []
-        for issue in data["issues"]:
-            entry = {
-                "id": issue["id"],
-                "key": issue["key"],
-                "type": issue["fields"]["issuetype"]["name"],
-                "fields": {},
-            }
-            for field_key, field_value in field_maps.items():
-                if (
-                    field_value in issue["renderedFields"]
-                    and issue["renderedFields"][field_value] is not None
-                ):
-                    entry["fields"][field_key] = JiraField(
-                        value=issue["renderedFields"][field_value],
-                        type=JiraFieldType.RICH_TEXT,
-                    )
-                elif (
-                    field_value in issue["fields"]
-                    and issue["fields"][field_value] is not None
-                ):
-                    if isinstance(issue["fields"][field_value], list):
+        seen_tokens = set()
+        field_maps = None
+        while True:
+            response = requests.request(
+                "GET", url, headers=headers, params=query.copy(), auth=auth
+            )
+            response.raise_for_status()
+
+            data = json.loads(response.text)
+
+            if field_maps is None:
+                # Resolve Jira internal field names to clear text representation of desired fields
+                field_maps = self._resolve_field_maps(data, fields, headers, auth)
+
+            # Extract desired fields from this page's issues
+            for issue in data["issues"]:
+                entry = {
+                    "id": issue["id"],
+                    "key": issue["key"],
+                    "type": issue["fields"]["issuetype"]["name"],
+                    "fields": {},
+                }
+                for field_key, field_value in field_maps.items():
+                    if (
+                        field_value in issue["renderedFields"]
+                        and issue["renderedFields"][field_value] is not None
+                    ):
                         entry["fields"][field_key] = JiraField(
-                            value=[
-                                entry["value"] for entry in issue["fields"][field_value]
-                            ],
-                            type=JiraFieldType.CHECKBOX,
+                            value=issue["renderedFields"][field_value],
+                            type=JiraFieldType.RICH_TEXT,
                         )
-                    else:
-                        entry["fields"][field_key] = JiraField(
-                            value=issue["fields"][field_value], type=JiraFieldType.TEXT
-                        )
-            result.append(entry)
+                    elif (
+                        field_value in issue["fields"]
+                        and issue["fields"][field_value] is not None
+                    ):
+                        if isinstance(issue["fields"][field_value], list):
+                            entry["fields"][field_key] = JiraField(
+                                value=[
+                                    entry["value"]
+                                    for entry in issue["fields"][field_value]
+                                ],
+                                type=JiraFieldType.CHECKBOX,
+                            )
+                        else:
+                            entry["fields"][field_key] = JiraField(
+                                value=issue["fields"][field_value],
+                                type=JiraFieldType.TEXT,
+                            )
+                result.append(entry)
+
+            if data.get("isLast") is True:
+                break
+
+            next_page_token = data.get("nextPageToken")
+            if data.get("isLast") is False and not next_page_token:
+                raise ValueError(
+                    "Jira search response is not the last page but has no nextPageToken"
+                )
+            if not next_page_token:
+                break
+            if next_page_token in seen_tokens:
+                raise ValueError(
+                    f"Jira search returned a repeated nextPageToken: {next_page_token}"
+                )
+
+            seen_tokens.add(next_page_token)
+            query["nextPageToken"] = next_page_token
+
         return [JiraIssue(**issue) for issue in result]
 
     def download_attachment(self, url: str, output_path: str) -> None:
