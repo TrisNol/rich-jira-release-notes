@@ -1,6 +1,37 @@
 # CHANGELOG
 
 
+## v0.3.0-rc.1 (2026-10-27)
+
+### Build System
+
+- **deps**: Bump actions/checkout from 6 to 7 (#251)
+  ([#251](https://github.com/TrisNol/rich-jira-release-notes/pull/251),
+  [`1e61d7d`](https://github.com/TrisNol/rich-jira-release-notes/commit/1e61d7d841468de7f23e4ba776d9be6c328f1831))
+
+- **deps-dev**: Bump mkdocs-material from 9.7.6 to 9.7.7 (#261)
+  ([#261](https://github.com/TrisNol/rich-jira-release-notes/pull/261),
+  [`58462f0`](https://github.com/TrisNol/rich-jira-release-notes/commit/58462f00441d39cbf5be8a8938c41033999d2855))
+
+### Chores
+
+- Sync back #246 [skip ci]
+  ([`1762e36`](https://github.com/TrisNol/rich-jira-release-notes/commit/1762e36a27c7f6ce47589a821d1e46f1292f1ea9))
+
+- **deps**: Consolidate dependabot updates and security patching
+  ([`0cad6c0`](https://github.com/TrisNol/rich-jira-release-notes/commit/0cad6c002738b0396357394e73768328597b2f27))
+
+- **deps**: Upgrade typer to 0.26.3 and add safety for vulnerability scanning (#247)
+  ([#247](https://github.com/TrisNol/rich-jira-release-notes/pull/247),
+  [`9c58761`](https://github.com/TrisNol/rich-jira-release-notes/commit/9c58761a87606c0eca6d7b7daba688bda5cfb39d))
+
+### Features
+
+- Enhance Jira API to support pagination and field extraction (#300)
+  ([#300](https://github.com/TrisNol/rich-jira-release-notes/pull/300),
+  [`0237c96`](https://github.com/TrisNol/rich-jira-release-notes/commit/0237c96c104bee51c30ada8fb01a4366cbeb3e4f))
+
+
 ## v0.2.3 (2026-05-22)
 
 ### Chores
